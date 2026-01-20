@@ -1052,3 +1052,164 @@ background-repeat: no-repeat;
   font-style: italic;
   font-size: 0.95rem;
 }
+
+/* ========================================
+   🔼 ENHANCEMENT UPDATE (NON-DESTRUCTIVE)
+   Keep original design – only refine
+   ======================================== */
+
+/* ---------- SECTION IMPROVEMENT ---------- */
+.section {
+  position: relative;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--blue-primary),
+    transparent
+  );
+  transform: translateX(-50%);
+  opacity: 0.15;
+}
+
+/* ---------- TYPOGRAPHY POLISH ---------- */
+.section-header h2 {
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  font-weight: 500;
+}
+
+/* ---------- CARD DEPTH REFINEMENT ---------- */
+.card,
+.vm-card,
+.value-item,
+.leader-card,
+.news-card,
+.program-card {
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f9fafb 100%
+  );
+}
+
+/* ---------- PROGRAM CARD UPGRADE ---------- */
+.program-card {
+  position: relative;
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(59,130,246,0.08),
+    transparent
+  );
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.program-card:hover::before {
+  opacity: 1;
+}
+
+/* ---------- ABOUT PAGE TEXT COMFORT ---------- */
+.history-content {
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f8fafc
+  );
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* ---------- LEADERSHIP CARD POLISH ---------- */
+.leader-card {
+  position: relative;
+}
+
+.leader-card::after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  background: var(--blue-primary);
+  display: block;
+  margin: 1rem auto 0;
+  border-radius: 4px;
+  opacity: 0.6;
+}
+
+/* ---------- NEWS PAGE UPGRADE ---------- */
+.news-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card img {
+  transition: transform 0.6s ease;
+}
+
+.news-card:hover img {
+  transform: scale(1.05);
+}
+
+.news-meta {
+  font-weight: 600;
+}
+
+/* ---------- READ MORE CTA ---------- */
+.read-more {
+  position: relative;
+  width: fit-content;
+}
+
+.read-more::after {
+  content: "→";
+  margin-left: 6px;
+  transition: transform 0.3s;
+}
+
+.read-more:hover::after {
+  transform: translateX(6px);
+}
+
+/* ---------- BUTTON FEEL UPGRADE ---------- */
+.btn {
+  letter-spacing: 0.3px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--white),
+    #e0f2fe
+  );
+}
+
+/* ---------- MOBILE REFINEMENT ---------- */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .program-card,
+  .news-card,
+  .leader-card {
+    padding: 1.8rem;
+  }
+}
