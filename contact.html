@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hubungi Kami - Yayasan Al Hidayah</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h2>Yayasan Al Hidayah</h2>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="programs.html">Program</a></li>
+          <li><a href="news.html">Berita</a></li>
+          <li><a href="contact.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="bi bi-list"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Hubungi Kami</h1>
+      <p>Kami siap menerima pertanyaan, saran, atau informasi pendaftaran dari Anda.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Informasi Kontak</h2>
+          <div class="contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <h4>Alamat</h4>
+              <p>[Isi alamat lengkap Yayasan Al Hidayah, contoh: Jl. Pendidikan No. 123, Jakarta Selatan, DKI Jakarta]</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@alhidayah.org">info@alhidayah.org</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <h4>Telepon / WhatsApp</h4>
+              <p><a href="tel:+622112345678">+62 21 1234-5678</a></p>
+              <p><a href="https://wa.me/6281234567890">+62 812-3456-7890 (WA)</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              <h4>Jam Operasional</h4>
+              <p>Senin – Jumat: 07.30 – 16.00 WIB<br>Sabtu: 07.30 – 12.00 WIB</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Kirim Pesan</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Nomor Telepon (Opsional)">
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Pilih Topik</option>
+                <option>Pendaftaran Siswa</option>
+                <option>Informasi Program</option>
+                <option>Kemitraan</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Yayasan Al Hidayah</h3>
+          <p>Membina generasi berprestasi, berakhlak, dan berwawasan global sejak 2005.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Link Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="programs.html">Program</a></li>
+            <li><a href="news.html">Berita</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ikuti Kami</h4>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Yayasan Al Hidayah. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('.nav ul');
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
+
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Terima kasih! Pesan Anda telah terkirim.');
+        form.reset();
+      });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section-header, .contact-info h2, .contact-form h2').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>

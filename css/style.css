@@ -1,0 +1,1054 @@
+/* ========================================
+   YAYASAN AL HIDAYAH — PREMIUM ANIMATED DESIGN
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-dark: #1E3A8A;
+  --blue-primary: #3B82F6;
+  --blue-light: #0EA5E9;
+  --bg-light: #F9FAFB;
+  --text-dark: #111827;
+  --white: #FFFFFF;
+  --gray: #64748B;
+  --light-gray: #F1F5F9;
+  --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ======================
+   HEADER
+   ====================== */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+}
+
+.logo h2 {
+  color: var(--blue-dark);
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  font-weight: 600;
+  color: var(--text-dark);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--blue-primary);
+  transition: var(--transition);
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+/* ======================
+   HERO FULL SCREEN WITH ANIMATION
+   ====================== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background:
+  linear-gradient(
+    135deg,
+    rgba(5, 25, 55, 0.75),
+    rgba(5, 25, 55, 0.6)
+  ),
+  url("../picture/Gambar Al - Hidayah.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+  color: var(--white);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.07) 0%, transparent 70%);
+  animation: rotate 80s linear infinite;
+  z-index: 1;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  line-height: 1.1;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.3s;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0;
+  animation: fadeInUp 1s forwards 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.9s;
+}
+
+.btn {
+  padding: 0.9rem 2rem;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background: var(--white);
+  color: var(--blue-dark);
+}
+
+.btn-primary:hover {
+  background: var(--blue-light);
+  color: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* ======================
+   GLOBAL ANIMATIONS FOR SECTIONS
+   ====================== */
+.section {
+  padding: 6rem 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--blue-dark);
+  margin-bottom: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.section-header p {
+  color: var(--gray);
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards 0.2s;
+}
+
+/* Animate cards on scroll */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======================
+   CARD STYLES
+   ====================== */
+.card, .vm-card, .value-item, .leader-card, .news-card {
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.card:hover, .vm-card:hover, .value-item:hover, .leader-card:hover, .news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.18);
+}
+
+/* ======================
+   ABOUT PREVIEW
+   ====================== */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards 0.4s;
+}
+
+.btn-link {
+  color: var(--blue-primary);
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.8s forwards 0.6s;
+}
+
+.btn-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--blue-primary);
+  transition: var(--transition);
+}
+
+.btn-link:hover::after {
+  width: 100%;
+}
+
+/* ======================
+   VISION & MISSION
+   ====================== */
+.vm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.icon-box {
+  font-size: 2.8rem;
+  color: var(--blue-primary);
+  margin-bottom: 1.5rem;
+}
+
+.vm-card {
+  padding: 2.5rem;
+}
+
+.vm-card h3 {
+  color: var(--blue-dark);
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.vm-card ul {
+  padding-left: 1.4rem;
+}
+
+.vm-card li {
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+
+.vm-card li::before {
+  content: '✓';
+  color: var(--blue-primary);
+  font-weight: bold;
+  position: absolute;
+  left: -1.4rem;
+}
+
+/* ======================
+   CORE VALUES
+   ====================== */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.value-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.value-item i {
+  font-size: 2.4rem;
+  color: var(--blue-primary);
+  margin-bottom: 1.2rem;
+}
+
+.value-item h4 {
+  color: var(--blue-dark);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+/* ======================
+   INSTITUTIONS
+   ====================== */
+.institution-card {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+}
+
+.inst-icon {
+  font-size: 3rem;
+  color: var(--blue-primary);
+  min-width: 70px;
+}
+
+.inst-content h3 {
+  color: var(--blue-dark);
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+}
+
+/* ======================
+   PROGRAMS LIST
+   ====================== */
+.program-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.program-list li {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.program-list i {
+  color: var(--blue-primary);
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+}
+
+/* ======================
+   NEWS CAROUSEL
+   ====================== */
+.news-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1.5rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.news-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.news-item {
+  scroll-snap-align: start;
+  flex: 0 0 320px;
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+.news-date {
+  background: var(--blue-primary);
+  color: white;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin: 1.2rem 1.2rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.news-item h4 {
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+  color: var(--blue-dark);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.read-more {
+  display: block;
+  padding: 0 1.2rem 1.2rem;
+  color: var(--blue-primary);
+  font-weight: 700;
+}
+
+/* ======================
+   FAQ
+   ====================== */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question i {
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0;
+}
+
+.faq-answer.open {
+  max-height: 400px;
+  padding: 0 0 1.5rem 0;
+}
+
+.faq-answer p {
+  color: var(--gray);
+  line-height: 1.8;
+  padding: 0 1.5rem;
+}
+
+.faq-answer a {
+  color: var(--blue-primary);
+  text-decoration: underline;
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+.footer {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 5rem 0 2.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-col p,
+.footer-col ul {
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col a {
+  color: rgba(255,255,255,0.85);
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: var(--white);
+}
+
+.footer-col i {
+  margin-right: 0.6rem;
+  width: 22px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: white;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  background: var(--blue-light);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.6);
+}
+
+/* ======================
+   ABOUT PAGE SPECIFIC
+   ====================== */
+.history-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.leader-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 4px solid var(--blue-primary);
+  background: var(--blue-dark);
+}
+
+.leader-card h4 {
+  color: var(--blue-dark);
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.leader-role {
+  color: var(--gray);
+  font-style: italic;
+}
+
+.gallery-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 1.5rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+  scroll-snap-align: start;
+  flex: 0 0 280px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.gallery-caption {
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.vm-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* ======================
+   PROGRAMS PAGE
+   ====================== */
+.program-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: var(--blue-primary);
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  color: var(--blue-dark);
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.level-badge {
+  display: inline-block;
+  background: var(--blue-primary);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+/* ======================
+   NEWS PAGE
+   ====================== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.news-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.news-meta {
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+}
+
+.news-card h3 {
+  padding: 1.2rem 1.2rem 0.7rem;
+  color: var(--blue-dark);
+  font-size: 1.3rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.news-card p {
+  padding: 0 1.2rem 1.2rem;
+  color: var(--gray);
+}
+
+.news-card .read-more {
+  padding: 0 1.2rem 1.2rem;
+}
+
+/* ======================
+   CONTACT PAGE
+   ====================== */
+.contact-section {
+  background: var(--white);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3.5rem;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: var(--blue-dark);
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.contact-item i {
+  font-size: 1.8rem;
+  color: var(--blue-primary);
+  min-width: 30px;
+  margin-top: 4px;
+}
+
+.contact-item h4 {
+  margin-bottom: 0.4rem;
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--blue-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* ======================
+   SCROLL REVEAL ANIMATION
+   ====================== */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======================
+   RESPONSIVE
+   ====================== */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.98);
+    backdrop-filter: blur(12px);
+    padding: 1.5rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .nav ul.active {
+    display: flex;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .institution-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inst-icon {
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+}
+
+/* ======================
+   CARD STYLES (PROGRAMS, ABOUT, ETC)
+   ====================== */
+.card, .vm-card, .value-item, .leader-card, .news-card {
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.card:hover, .vm-card:hover, .value-item:hover, .leader-card:hover, .news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.18);
+}
+
+/* ======================
+   PROGRAMS CARDS (KURIKULUM, AL-QUR'AN, DLL)
+   ====================== */
+.program-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.program-card {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.program-card i {
+  font-size: 3rem;
+  color: var(--blue-primary);
+  margin-bottom: 1rem;
+}
+
+.program-card h3 {
+  color: var(--blue-dark);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.program-card p {
+  color: var(--gray);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* ======================
+   ABOUT PAGE - SEJARAH BERDIRI
+   ====================== */
+.history-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  padding: 2rem;
+}
+
+.history-content p {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+/* ======================
+   STRUKTUR PENGURUS
+   ====================== */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.leader-card {
+  text-align: center;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.leader-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.18);
+}
+
+.leader-img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+  border: 4px solid var(--blue-primary);
+  background: var(--blue-dark);
+}
+
+.leader-card h4 {
+  color: var(--blue-dark);
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.leader-role {
+  color: var(--gray);
+  font-style: italic;
+  font-size: 0.95rem;
+}
