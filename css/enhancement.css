@@ -133,3 +133,153 @@
     padding: 1.8rem;
   }
 }
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #e5e7eb;
+  padding: 60px 20px 0;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #cbd5f5;
+}
+
+/* FOOTER CONTACT */
+.footer-contact a {
+  display: block;
+  margin-bottom: 12px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #60a5fa;
+  transform: translateX(5px);
+}
+
+.footer-contact p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.footer-social a {
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: #3b82f6;
+  transform: translateY(-3px);
+}
+
+/* CONTACT ITEM */
+.footer-contact .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-contact .contact-item img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-contact .contact-item:hover {
+  color: #60a5fa;
+  transform: translateX(5px);
+}
+
+/* SOCIAL ICONS */
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.footer-social img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social a:hover {
+  background: #3b82f6;
+  transform: translateY(-3px);
+}
