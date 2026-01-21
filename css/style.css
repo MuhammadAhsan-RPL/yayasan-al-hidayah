@@ -43,6 +43,7 @@ ul {
   list-style: none;
 }
 
+/* --------------------------- */
 /* ======================
    HEADER
    ====================== */
@@ -107,6 +108,7 @@ ul {
   color: var(--text-dark);
 }
 
+/* --------------------------- */
 /* ======================
    HERO FULL SCREEN WITH ANIMATION
    ====================== */
@@ -244,6 +246,7 @@ background-repeat: no-repeat;
   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
 
+/* --------------------------- */
 /* ======================
    GLOBAL ANIMATIONS FOR SECTIONS
    ====================== */
@@ -288,6 +291,7 @@ background-repeat: no-repeat;
   transform: translateY(0);
 }
 
+/* --------------------------- */
 /* ======================
    CARD STYLES
    ====================== */
@@ -304,6 +308,7 @@ background-repeat: no-repeat;
   box-shadow: 0 20px 40px -10px rgba(0,0,0,0.18);
 }
 
+/* --------------------------- */
 /* ======================
    ABOUT PREVIEW
    ====================== */
@@ -345,6 +350,7 @@ background-repeat: no-repeat;
   width: 100%;
 }
 
+/* --------------------------- */
 /* ======================
    VISION & MISSION
    ====================== */
@@ -387,6 +393,7 @@ background-repeat: no-repeat;
   left: -1.4rem;
 }
 
+/* --------------------------- */
 /* ======================
    CORE VALUES
    ====================== */
@@ -413,6 +420,7 @@ background-repeat: no-repeat;
   font-size: 1.2rem;
 }
 
+/* --------------------------- */
 /* ======================
    INSTITUTIONS
    ====================== */
@@ -438,6 +446,7 @@ background-repeat: no-repeat;
   font-size: 1.5rem;
 }
 
+/* --------------------------- */
 /* ======================
    PROGRAMS LIST
    ====================== */
@@ -460,6 +469,7 @@ background-repeat: no-repeat;
   font-size: 1.2rem;
 }
 
+/* --------------------------- */
 /* ======================
    NEWS CAROUSEL
    ====================== */
@@ -514,6 +524,7 @@ background-repeat: no-repeat;
   font-weight: 700;
 }
 
+/* --------------------------- */
 /* ======================
    FAQ
    ====================== */
@@ -568,6 +579,7 @@ background-repeat: no-repeat;
   text-decoration: underline;
 }
 
+/* --------------------------- */
 /* ======================
    FOOTER
    ====================== */
@@ -590,13 +602,26 @@ background-repeat: no-repeat;
   margin-bottom: 2.5rem;
 }
 
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;              /* 🔑 PENTING */
+  flex-direction: column;     /* 🔑 PENTING */
+}
+
 .footer-bottom {
+  width: 100%;
   border-top: 1px solid rgba(255,255,255,0.15);
   padding-top: 1.5rem;
+  margin-top: 2.5rem;
   text-align: center;
   font-size: 0.95rem;
   color: rgba(255,255,255,0.8);
 }
+.footer-col h2,
+
 
 .footer-col h3,
 .footer-col h4 {
@@ -653,6 +678,7 @@ background-repeat: no-repeat;
   transform: translateY(-3px);
 }
 
+/* --------------------------- */
 /* ======================
    ABOUT PAGE SPECIFIC
    ====================== */
@@ -724,6 +750,7 @@ background-repeat: no-repeat;
   gap: 2.5rem;
 }
 
+/* --------------------------- */
 /* ======================
    PROGRAMS PAGE
    ====================== */
@@ -763,6 +790,7 @@ background-repeat: no-repeat;
   font-size: 1.1rem;
 }
 
+/* --------------------------- */
 /* ======================
    NEWS PAGE
    ====================== */
@@ -804,6 +832,7 @@ background-repeat: no-repeat;
   padding: 0 1.2rem 1.2rem;
 }
 
+/* --------------------------- */
 /* ======================
    CONTACT PAGE
    ====================== */
@@ -868,6 +897,7 @@ background-repeat: no-repeat;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
+/* --------------------------- */
 /* ======================
    SCROLL REVEAL ANIMATION
    ====================== */
@@ -882,6 +912,7 @@ background-repeat: no-repeat;
   transform: translateY(0);
 }
 
+/* --------------------------- */
 /* ======================
    RESPONSIVE
    ====================== */
@@ -941,6 +972,7 @@ background-repeat: no-repeat;
   }
 }
 
+/* --------------------------- */
 /* ======================
    CARD STYLES (PROGRAMS, ABOUT, ETC)
    ====================== */
@@ -957,6 +989,7 @@ background-repeat: no-repeat;
   box-shadow: 0 20px 40px -10px rgba(0,0,0,0.18);
 }
 
+/* --------------------------- */
 /* ======================
    PROGRAMS CARDS (KURIKULUM, AL-QUR'AN, DLL)
    ====================== */
@@ -994,6 +1027,7 @@ background-repeat: no-repeat;
   line-height: 1.6;
 }
 
+/* --------------------------- */
 /* ======================
    ABOUT PAGE - SEJARAH BERDIRI
    ====================== */
@@ -1013,6 +1047,7 @@ background-repeat: no-repeat;
   animation: fadeInUp 0.8s forwards;
 }
 
+/* --------------------------- */
 /* ======================
    STRUKTUR PENGURUS
    ====================== */
@@ -1060,3 +1095,199 @@ background-repeat: no-repeat;
   font-size: 0.95rem;
 }
 
+/* --------------------------- */
+/* =========================
+   CHAT WIDGET
+   ========================= */
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* ICON BULAT */
+.chat-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--blue-dark); /* 🔑 FIX VARIABLE */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+.chat-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff; /* 🔑 icon lebih kontras */
+}
+
+/* PANEL CHAT */
+.chat-panel {
+  position: fixed;
+  bottom: 0;
+  right: -400px; /* 🔑 awalnya sembunyi */
+  width: 380px;
+  max-height: 80vh;
+  background: var(--white);
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  transition: right 0.3s ease;
+  z-index: 9998;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.chat-panel.active {
+  right: 0; /* 🔑 muncul */
+}
+
+/* HEADER */
+.chat-header {
+  background: linear-gradient(
+    135deg,
+    var(--blue-dark),
+    var(--blue-light)
+  );
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px 16px 0 0;
+}
+
+.chat-header .logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.chat-header .close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.chat-header .avatar-group {
+  display: flex;
+  gap: 6px;
+}
+
+.chat-header img.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* BODY */
+.chat-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chat-greeting {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.chat-greeting span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* OPTION */
+.chat-option {
+  background: #f8fafc;
+  padding: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-option:hover {
+  background: #e2e8f0;
+}
+
+.chat-option .arrow {
+  color: var(--blue-dark);
+  font-size: 1.2rem;
+}
+
+/* PROMO */
+.chat-promo {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.chat-promo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.chat-promo .promo-text {
+  padding: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* FOOTER */
+.chat-footer {
+  display: flex;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding: 16px;
+  gap: 20px;
+}
+
+.chat-footer button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+}
+
+.chat-footer .home-btn {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+.chat-footer .home-btn:hover {
+  background: #cbd5e1;
+}
+
+.chat-footer .message-btn {
+  background: var(--blue-dark); /* 🔑 FIX */
+  color: #ffffff;
+}
+.chat-footer .message-btn:hover {
+  background: var(--blue-light);
+}
+
+.chat-icon.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.7);
+}
