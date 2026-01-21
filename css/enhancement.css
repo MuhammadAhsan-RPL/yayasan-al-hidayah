@@ -283,3 +283,60 @@
   background: #3b82f6;
   transform: translateY(-3px);
 }
+
+
+/* News section */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.news-card .news-meta span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+/* Section Spacing and Headers */
+.section {
+  padding: 6rem 0;
+  margin-top: 2rem;
+}
+
+.section-header h2 {
+  letter-spacing: -0.5px;
+  font-size: 2.4rem;
+}
+
+.section-header p {
+  margin-top: 0.8rem;
+  color: var(--gray);
+}
+
+
+/* Bikin semua card rapi & lurus */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.program-card,
+.news-card,
+.leader-card {
+  height: 100%;
+}
+
+/* STATE AWAL */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* SAAT MUNCUL */
+[data-animate].show {
+  opacity: 1;
+  transform: translateY(0);
+}
