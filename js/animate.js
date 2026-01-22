@@ -29,3 +29,35 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(item);
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".news-card[data-animate]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.dataset.delay || 0;
+
+          setTimeout(() => {
+            entry.target.classList.add("show");
+          }, delay);
+
+          // animasi hanya sekali
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,              // muncul saat 15% terlihat
+      rootMargin: "0px 0px -60px 0px"
+    }
+  );
+
+  cards.forEach((card, index) => {
+    // stagger dari atas ke bawah (1 kolom)
+    card.dataset.delay = index * 120;
+    observer.observe(card);
+  });
+});
+
