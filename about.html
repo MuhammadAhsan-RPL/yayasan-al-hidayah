@@ -1,406 +1,454 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tentang Kami - Yayasan Al Hidayah</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/enhancement.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Yayasan Al-Hidayah - Sejarah & Visi Misi</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h2>Yayasan Al Hidayah</h2>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html" class="active">Tentang</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html">Berita</a></li>
-          <li><a href="contact.html">Kontak</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menuToggle">
-        <i class="bi bi-list"></i>
-      </div>
-    </div>
-  </header>
+    <!-- Back to Top Button -->
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Tentang Yayasan Al Hidayah</h1>
-      <p>Wujud nyata kepedulian terhadap pendidikan Islam holistik dan berkelanjutan.</p>
-    </div>
-  </section>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
 
-  <!-- Sejarah Berdirinya -->
-  <section class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <h2>Sejarah Berdirinya</h2>
-      </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link active">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    <a href="teachers.html" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Guru
+                    </a>
+                    <a href="gallery.html" class="nav-link">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
 
-      <div class="history-content typewriter" data-animate>
-        <p data-typewriter>
-          Yayasan Al Hidayah didirikan pada tahun 2005 oleh sekelompok pendidik dan tokoh masyarakat yang prihatin
-          terhadap minimnya lembaga pendidikan Islam yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai
-          Al-Qur’an dan Sunnah secara utuh.
-        </p>
-
-        <p data-typewriter>
-          Bermula dari sebuah taman kanak-kanak kecil di Jakarta Selatan, kini Yayasan Al Hidayah telah berkembang
-          menjadi naungan dari --- Al Hidayah Islamic School (AHIS) -- yang menyelenggarakan pendidikan dari
-          jenjang TK hingga SMA.
-        </p>
-
-        <p data-typewriter>
-          Selama dua dekade, kami terus berkomitmen mencetak generasi yang tidak hanya unggul dalam akademik, tetapi
-          juga kokoh dalam akhlak, mandiri, dan peduli terhadap sesama.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Struktur Pengurus -->
-  <section class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <h2>Struktur Pengurus</h2>
-        <p>Tim profesional yang memimpin perjalanan Yayasan Al Hidayah.</p>
-      </div>
-      <div class="leadership-grid">
-        <div class="leader-card">
-          <div class="leader-img">
-            <img src="picture/Gambar Al - Hidayah.png" alt="Dr. Ahmad Fauzi">
-          </div>
-          <h4>Dr. Ahmad Fauzi, M.Pd.</h4>
-          <p class="leader-role">Ketua Yayasan</p>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
-        <div class="leader-card">
-          <div class="leader-img">
-            <img src="picture/Gambar Al - Hidayah.png" alt="Siti Nurhaliza">
-          </div>
-          <h4>Siti Nurhaliza, S.Pd.</h4>
-          <p class="leader-role">Sekretaris</p>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title">Tentang Yayasan Al-Hidayah</h1>
+                <nav class="breadcrumb">
+                    <a href="index.html">Beranda</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Tentang Kami</span>
+                </nav>
+            </div>
         </div>
-        <div class="leader-card">
-          <div class="leader-img">
-            <img src="picture/Gambar Al - Hidayah.png" alt="H. Bambang Suryanto">
-          </div>
-          <h4>H. Bambang Suryanto</h4>
-          <p class="leader-role">Bendahara</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="section about-detail">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Sejarah Yayasan Al-Hidayah</h2>
+                    <p>Yayasan Al-Hidayah didirikan pada tahun 1998 oleh sekelompok tokoh pendidikan yang memiliki visi untuk membentuk generasi muda Indonesia yang tidak hanya cerdas secara intelektual tetapi juga memiliki karakter yang kuat berdasarkan nilai-nilai Islam.</p>
+                    
+                    <p>Dimulai dengan hanya satu kelas kecil di bilangan Jakarta Selatan, Yayasan Al-Hidayah telah berkembang menjadi lembaga pendidikan Islam terkemuka yang mengelola empat jenjang pendidikan: PAUD, SD Islam, SMP Islam, dan SMA Islam.</p>
+                    
+                    <h3>Visi Kami</h3>
+                    <div class="vision-box">
+                        <i class="fas fa-eye"></i>
+                        <p>"Menjadi lembaga pendidikan Islam terdepan yang menghasilkan generasi unggul, berakhlak mulia, dan berkontribusi positif untuk masyarakat."</p>
+                    </div>
+                    
+                    <h3>Misi Kami</h3>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check"></i> Menyelenggarakan pendidikan berkualitas yang mengintegrasikan ilmu pengetahuan dan nilai-nilai Islam</li>
+                        <li><i class="fas fa-check"></i> Mengembangkan potensi siswa secara holistik melalui kurikulum yang seimbang</li>
+                        <li><i class="fas fa-check"></i> Membangun karakter kuat berdasarkan akhlakul karimah dan nilai-nilai Islam</li>
+                        <li><i class="fas fa-check"></i> Menciptakan lingkungan belajar yang aman, nyaman, dan inspiratif</li>
+                        <li><i class="fas fa-check"></i> Menjalin kemitraan yang baik dengan orang tua dan masyarakat</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Kampus Al-Hidayah">
+                    <div class="image-caption">
+                        <i class="fas fa-school"></i> Kampus Modern Al-Hidayah
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="leader-card">
-          <div class="leader-img">
-            <img src="picture/Gambar Al - Hidayah.png" alt="Ustadzah Rina Fitriani">
-          </div>
-          <h4>Ustadzah Rina Fitriani, M.Ag.</h4>
-          <p class="leader-role">Kepala Sekolah AHIS</p>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section timeline-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perjalanan Kami</h2>
+                <p class="section-subtitle">26 Tahun Mengabdi untuk Pendidikan Islam</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <div class="timeline-content">
+                        <h3>Pendirian Yayasan</h3>
+                        <p>Yayasan Al-Hidayah didirikan dengan 1 kelas pertama di Jakarta Selatan, 25 siswa pertama memulai pendidikan mereka</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h3>Ekspansi Jenjang Pendidikan</h3>
+                        <p>Membuka jenjang SMP dan SMA Islam Al-Hidayah setelah keberhasilan SD Islam Al-Hidayah</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Akreditasi A Pertama</h3>
+                        <p>Mendapatkan akreditasi A dari Badan Akreditasi Nasional untuk semua jenjang pendidikan</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Pindah ke Kampus Modern</h3>
+                        <p>Pindah ke kampus baru seluas 2 hektar di Cilandak dengan fasilitas lengkap dan modern</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>Digital Transformation</h3>
+                        <p>Mengimplementasikan sistem pembelajaran digital dan platform online untuk seluruh jenjang</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Sekolah Islam Terbaik Jakarta</h3>
+                        <p>Dinobatkan sebagai Sekolah Islam Terbaik se-Jakarta oleh Kementerian Pendidikan</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Galeri Perjalanan -->
-  <section class="section" data-animate>
-    <div class="container">
-      <div class="section-header">
-        <h2>Perjalanan Yayasan</h2>
-        <p>Momen-momen bersejarah dalam perjalanan kami.</p>
-      </div>
-      <div class="gallery-carousel">
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2005">
-          <p class="gallery-caption">2005: Berdiri sebagai TK Al Hidayah</p>
+    <!-- Values Section -->
+    <section class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nilai-Nilai Kami</h2>
+                <p class="section-subtitle">Prinsip yang menjadi dasar setiap kegiatan pendidikan di Al-Hidayah</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mendidik dengan Hati</h3>
+                    <p>Setiap guru tidak hanya mengajar, tapi memahami karakter setiap siswa dengan pendekatan personal dan penuh kasih sayang</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Keseimbangan Holistik</h3>
+                    <p>Keseimbangan antara akademik, karakter Islami, pengembangan bakat, dan kesehatan mental menjadi filosofi utama</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Komunitas yang Mendukung</h3>
+                    <p>Orang tua, guru, dan siswa bekerja sama menciptakan lingkungan belajar yang positif dan inspiratif</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Keunggulan Berkelanjutan</h3>
+                    <p>Terus berinovasi dan meningkatkan kualitas pendidikan untuk memberikan yang terbaik bagi siswa</p>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2010">
-          <p class="gallery-caption">2010: Pembukaan SD Al Hidayah</p>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section bg-light">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">26</div>
+                    <div class="stat-label">Tahun Mengabdi</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5.200+</div>
+                    <div class="stat-label">Keluarga Percaya</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">320+</div>
+                    <div class="stat-label">Guru Profesional</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Lulus Masuk PTN</div>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2015">
-          <p class="gallery-caption">2015: Perluasan ke jenjang SMP</p>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="section leadership-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pimpinan Yayasan</h2>
+                <p class="section-subtitle">Bertemu dengan tim pimpinan yang berdedikasi</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Dr. Ahmad Syafii">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Dr. Ahmad Syafii, M.Pd.</h3>
+                        <p class="leader-position">Ketua Yayasan</p>
+                        <p class="leader-bio">Pengalaman 30 tahun dalam pendidikan Islam. Doktor Pendidikan dari Universitas Indonesia dengan spesialisasi manajemen pendidikan.</p>
+                        <div class="leader-qualifications">
+                            <span><i class="fas fa-graduation-cap"></i> Doktor Pendidikan UI</span>
+                            <span><i class="fas fa-award"></i> 30 Tahun Pengalaman</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Drs. H. Bambang Sutrisno">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Drs. H. Bambang Sutrisno</h3>
+                        <p class="leader-position">Kepala Sekolah</p>
+                        <p class="leader-bio">Memimpin Al-Hidayah sejak 2010. Spesialisasi dalam manajemen pendidikan Islam dan pengembangan kurikulum integratif.</p>
+                        <div class="leader-qualifications">
+                            <span><i class="fas fa-user-tie"></i> Kepala Sekolah sejak 2010</span>
+                            <span><i class="fas fa-medal"></i> Pengawas Sekolah Berprestasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2020">
-          <p class="gallery-caption">2020: Resmi membuka SMA</p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Bergabunglah dengan Komunitas Al-Hidayah</h2>
+                <p>Jadilah bagian dari perjalanan pendidikan yang menginspirasi dan membentuk generasi unggul</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Hubungi Kami
+                    </a>
+                    <a href="programs.html" class="btn btn-secondary btn-large">
+                        <i class="fas fa-school"></i> Lihat Program
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2023">
-          <p class="gallery-caption">2023: Raih Akreditasi “A” Nasional</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teachers.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                    <a href="contact.html"><i class="fas fa-chevron-right"></i> Kontak</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
         </div>
-        <div class="gallery-item">
-          <img src="picture/Gambar Al - Hidayah.png" alt="2025">
-          <p class="gallery-caption">2025: Kolaborasi dengan Sekolah Internasional</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Visi Misi Ringkas -->
-  <section class="section" data-animate>
-    <div class="container">
-      <div class="vm-cards">
-        <div class="vm-card">
-          <div class="icon-box"><i class="bi bi-bullseye"></i></div>
-          <h3>Visi</h3>
-          <p>Menjadi yayasan pendidikan Islam unggul dan terpercaya dalam membentuk generasi berilmu, berakhlak mulia,
-            berlandaskan Al-Qur’an dan As-Sunnah, serta berdaya saing nasional dan global.</p>
-        </div>
-        <div class="vm-card">
-          <div class="icon-box"><i class="bi bi-journal-check"></i></div>
-          <h3>Misi</h3>
-          <ul>
-            <li>Menyelenggarakan pendidikan Islam terpadu</li>
-            <li>Membentuk karakter berlandaskan Al-Qur’an & As-Sunnah</li>
-            <li>Mengembangkan potensi akademik & spiritual</li>
-            <li>Menciptakan lingkungan belajar inspiratif</li>
-          </ul>
-        </div>
-        <div class="vm-card">
-          <div class="icon-box"><i class="bi bi-stars"></i></div>
-          <h3>Nilai-Nilai</h3>
-          <p>Keislaman • Akhlakul Karimah • Integritas • Amanah • Profesionalisme • Disiplin • Tanggung Jawab • Inovasi
-            • Kreativitas • Kemandirian • Kepedulian Sosial • Kerja Sama • Kepemimpinan • Keunggulan </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-container">
-
-      <div class="footer-col">
-        <h3>Yayasan Al Hidayah</h3>
-        <p>
-          Yayasan pendidikan Islam yang berkomitmen melahirkan generasi berilmu, berakhlak mulia, dan berdaya saing
-          global.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigasi</h4>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html">Berita</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Program Pendidikan</h4>
-        <ul>
-          <li>SD Islam Terpadu</li>
-          <li>SMP Islam Terpadu</li>
-          <li>SMA Islam Terpadu</li>
-          <li>Tahfidz Al-Qur’an</li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-contact">
-        <h4>Hubungi Kami</h4>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
-          <span>WhatsApp</span>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:info@alhidayah.sch.id" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
-          <span>info@alhidayah.sch.id</span>
-        </a>
-
-        <!-- Lokasi -->
-        <a href="https://maps.app.goo.gl/bSsLNczox5xMHXNe7" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Lokasi">
-          <span>
-            Temukan Lokasi Kami
-          </span>
-        </a>
-
-
-        <!-- Sosial Media -->
-        <div class="footer-social">
-          <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-          </a>
-          <a href="https://youtube.com/USERNAME" target="_blank" aria-label="YouTube">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
-          </a>
-          <a href="https://facebook.com/USERNAME" target="_blank" aria-label="Facebook">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 Yayasan Al Hidayah. All rights reserved.</p>
-      </div>
-  </footer>
-
-  <!-- CHAT WIDGET -->
-  <div class="chat-widget" id="chatWidget">
-    <div class="chat-icon" onclick="toggleChat()">
-      <span class="chat-badge"></span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-      </svg>
-    </div>
-  </div>
-
-  <div class="chat-panel" id="chatPanel">
-    <div class="chat-header">
-      <div>
-        <strong>Service Team</strong>
-        <span class="status">Online</span>
-      </div>
-      <button class="close-btn" onclick="toggleChat()">×</button>
-    </div>
-
-    <div class="chat-body">
-      <div class="chat-greeting">Hai 👋<br>“Ada yang bisa kami bantu?”</div>
-      <div class="chat-option"
-        onclick="window.open('https://wa.me/14155550199?text=Assalamualikum%20pak%20,%20Saya%20.....%20Mau%20Bertanya.', '_blank')">
-        Chat Via WhatsApp <span class="arrow">→</span>
-      </div>
-
-      <div class="chat-footer">
-        <button onclick="alert('Silakan datang ke kantor kami untuk info lebih lengkap')">
-          Informasi Lainnya
-        </button>
-      </div>
-    </div>
-
-    <!--Chat Widget-->
+    <!-- JavaScript -->
     <script>
-      function toggleFAQ(element) {
-        const answer = element.nextElementSibling;
-        const isOpen = answer.style.display === "block";
-
-        document.querySelectorAll('.faq-answer').forEach(el => {
-          el.style.display = 'none';
-        });
-
-        if (!isOpen) {
-          answer.style.display = 'block';
-          answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      }
-
-      function toggleChat() {
-        const panel = document.getElementById('chatPanel');
-        const icon = document.querySelector('.chat-icon');
-
-        panel.classList.toggle('active');
-        icon.classList.toggle('hide');
-      }
-    </script>
-
-    <!--Animasi muncul -->
-    <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const nav = document.querySelector('.nav ul');
-      if (menuToggle && nav) {
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
         menuToggle.addEventListener('click', () => {
-          nav.classList.toggle('active');
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
         });
-      }
 
-      document.querySelectorAll('.faq-question').forEach(button => {
-        button.addEventListener('click', () => {
-          const answer = button.nextElementSibling;
-          const isOpen = answer.classList.contains('open');
-
-          document.querySelectorAll('.faq-answer').forEach(a => {
-            a.classList.remove('open');
-            a.style.maxHeight = null;
-          });
-          document.querySelectorAll('.faq-question i').forEach(icon => {
-            icon.style.transform = 'rotate(0deg)';
-          });
-
-          if (!isOpen) {
-            answer.classList.add('open');
-            button.querySelector('i').style.transform = 'rotate(180deg)';
-          }
-        });
-      });
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.1 });
-
-      document.querySelectorAll('.section-header, .about-content p, .btn-link, [data-animate]').forEach(el => {
-        observer.observe(el);
-      });
-    </script>
-
-    <!--Animasi ketik -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const paragraphs = document.querySelectorAll(".typewriter p[data-typewriter]");
-        const speed = 30; // makin kecil makin cepat
-
-        function typeText(el, callback) {
-          const text = el.innerHTML;
-          el.innerHTML = "";          // hapus teks asli
-          el.classList.add("active"); // tampilkan paragraf
-
-          let i = 0;
-          const typing = setInterval(() => {
-            el.innerHTML += text.charAt(i);
-            i++;
-            if (i >= text.length) {
-              clearInterval(typing);
-              el.classList.add("done"); // hilangkan cursor
-              if (callback) callback();
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
             }
-          }, speed);
+        });
+        
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animated Counter
+        const counters = document.querySelectorAll('.stat-number');
+        
+        function animateCounter() {
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + (counter.textContent.includes('%') ? '%' : '');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + (counter.textContent.includes('%') ? '%' : '');
+                    }
+                }, 20);
+            });
         }
 
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              let index = 0;
-
-              function typeNext() {
-                if (index < paragraphs.length) {
-                  typeText(paragraphs[index], () => {
-                    index++;
-                    setTimeout(typeNext, 400); // jeda antar paragraf
-                  });
+        // Trigger counter when in viewport
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter();
+                    observer.unobserve(entry.target);
                 }
-              }
+            });
+        }, { threshold: 0.5 });
 
-              typeNext();
-              observer.disconnect(); // hentikan observer setelah animasi mulai
-            }
-          });
-        }, { threshold: 0.3 });
-
-        const typewriterSection = document.querySelector(".typewriter");
-        if (typewriterSection) observer.observe(typewriterSection);
-      });
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) observer.observe(statsSection);
     </script>
-
-    <script src="js/animate.js"></script>
 </body>
-
 </html>

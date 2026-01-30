@@ -1,291 +1,470 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hubungi Kami - Yayasan Al Hidayah</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/enhancement.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Yayasan Al-Hidayah</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h2>Yayasan Al Hidayah</h2>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html">Berita</a></li>
-          <li><a href="contact.html" class="active">Kontak</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menuToggle">
-        <i class="bi bi-list"></i>
-      </div>
-    </div>
-  </header>
+    <!-- Back to Top Button -->
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Hubungi Kami</h1>
-      <p>Kami siap menerima pertanyaan, saran, atau informasi pendaftaran dari Anda.</p>
-    </div>
-  </section>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
 
-  <section class="section" data-animate>
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Informasi Kontak</h2>
-          <div class="contact-item">
-            <i class="bi bi-geo-alt"></i>
-            <div>
-              <h4>Alamat</h4>
-              <p> Lippo Cikarang, Kompleks Masjid Al Hidayah, Jalan Dahlia Raya, Taman Lembah Hijau, Lippo Cikarang,
-                Sukaresmi, Perumahan Taman Lembah Hijau Jl. Dahlia Raya No.1, Cibatu, Cikarang Sel., Kabupaten Bekasi,
-                Jawa Barat 17530. Indonesia
-              </p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="bi bi-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:info@alhidayah.org">info@alhidayah.org</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="bi bi-telephone"></i>
-            <div>
-              <h4>Telepon / WhatsApp</h4>
-              <p><a href="tel:+622112345678">+62 21 1234-5678</a></p>
-              <p><a href="https://wa.me/6281234567890">+62 812-3456-7890 (WA)</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="bi bi-clock"></i>
-            <div>
-              <h4>Jam Operasional</h4>
-              <p>Senin – Jumat: 07.30 – 16.00 WIB<br>Sabtu: 07.30 – 12.00 WIB</p>
-            </div>
-          </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    <a href="teacher.html" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Guru
+                    </a>
+                    <a href="gallery.html" class="nav-link">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link active">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
+    </header>
 
-        <div class="contact-form">
-          <h2>Kirim Pesan</h2>
-          <form id="contactForm">
-            <div class="form-group">
-              <input type="text" placeholder="Nama Lengkap" required>
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Hubungi Kami</h1>
+                <p>Kami siap membantu dan menjawab semua pertanyaan Anda</p>
+                <nav class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Kontak</span>
+                </nav>
             </div>
-            <div class="form-group">
-              <input type="email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <input type="tel" placeholder="Nomor Telepon (Opsional)">
-            </div>
-            <div class="form-group">
-              <select required>
-                <option value="" disabled selected>Pilih Topik</option>
-                <option>Pendaftaran Siswa</option>
-                <option>Informasi Program</option>
-                <option>Kemitraan</option>
-                <option>Lainnya</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="footer-container">
+    <!-- Contact Info -->
+    <section class="section contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Alamat</h3>
+                    <p>Jl. Pendidikan No. 123, Cilandak<br>Jakarta Selatan 12540</p>
+                    <a href="https://maps.google.com/?q=Jl.+Pendidikan+No.+123,+Cilandak,+Jakarta+Selatan" class="contact-link" target="_blank">
+                        <i class="fas fa-directions"></i> Petunjuk Arah
+                    </a>
+                </div>
 
-      <div class="footer-col">
-        <h3>Yayasan Al Hidayah</h3>
-        <p>
-          Yayasan pendidikan Islam yang berkomitmen melahirkan generasi berilmu, berakhlak mulia, dan berdaya saing
-          global.
-        </p>
-      </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telepon & WhatsApp</h3>
+                    <p>(021) 1234-5678<br>0812-1234-5678 (WA)</p>
+                    <a href="https://wa.me/6281212345678" class="contact-link whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                    </a>
+                </div>
 
-      <div class="footer-col">
-        <h4>Navigasi</h4>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html">Berita</a></li>
-        </ul>
-      </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@alhidayah.sch.id<br>pendaftaran@alhidayah.sch.id</p>
+                    <a href="mailto:info@alhidayah.sch.id" class="contact-link">
+                        <i class="fas fa-paper-plane"></i> Kirim Email
+                    </a>
+                </div>
 
-      <div class="footer-col">
-        <h4>Program Pendidikan</h4>
-        <ul>
-          <li>SD Islam Terpadu</li>
-          <li>SMP Islam Terpadu</li>
-          <li>SMA Islam Terpadu</li>
-          <li>Tahfidz Al-Qur’an</li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-contact">
-        <h4>Hubungi Kami</h4>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
-          <span>WhatsApp</span>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:info@alhidayah.sch.id" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
-          <span>info@alhidayah.sch.id</span>
-        </a>
-
-        <!-- Lokasi -->
-        <a href="https://maps.app.goo.gl/bSsLNczox5xMHXNe7" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Lokasi">
-          <span>
-            Temukan Lokasi Kami
-          </span>
-        </a>
-
-        <!-- Sosial Media -->
-        <div class="footer-social">
-          <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-          </a>
-          <a href="https://youtube.com/USERNAME" target="_blank" aria-label="YouTube">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
-          </a>
-          <a href="https://facebook.com/USERNAME" target="_blank" aria-label="Facebook">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
-          </a>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin-Jumat: 07:00 - 16:00<br>Sabtu: 08:00 - 14:00<br>Minggu: Tutup</p>
+                    <span class="contact-note">*Pendaftaran buka setiap hari kerja</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Yayasan Al Hidayah. All rights reserved.</p>
-      </div>
-  </footer>
+    </section>
 
-  <!-- CHAT WIDGET -->
-  <div class="chat-widget" id="chatWidget">
-    <div class="chat-icon" onclick="toggleChat()">
-      <span class="chat-badge"></span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-      </svg>
-    </div>
-  </div>
+    <!-- Contact Form & Map -->
+    <section class="section contact-form-map-section bg-light">
+        <div class="container">
+            <div class="contact-form-map">
+                <div class="contact-form-container">
+                    <h2>Kirim Pesan</h2>
+                    <p class="form-subtitle">Isi form berikut untuk pertanyaan atau informasi lebih lanjut</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Lengkap *</label>
+                                <input type="text" placeholder="Masukkan nama lengkap" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" placeholder="email@anda.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Nomor Telepon *</label>
+                            <input type="tel" placeholder="08XXXXXXXXXX" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Subjek *</label>
+                            <select required>
+                                <option value="">Pilih Subjek</option>
+                                <option value="pendaftaran">Pendaftaran Siswa Baru</option>
+                                <option value="beasiswa">Informasi Beasiswa</option>
+                                <option value="fasilitas">Informasi Fasilitas</option>
+                                <option value="kunjungan">Kunjungan Sekolah</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Pesan *</label>
+                            <textarea rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
 
-  <div class="chat-panel" id="chatPanel">
-    <div class="chat-header">
-      <div>
-        <strong>Service Team</strong>
-        <span class="status">Online</span>
-      </div>
-      <button class="close-btn" onclick="toggleChat()">×</button>
-    </div>
+                <div class="map-container">
+                    <h2>Lokasi Kami</h2>
+                    <div class="map-wrapper">
+                        <!-- Simple Map Placeholder -->
+                        <div class="simple-map">
+                            <div class="map-placeholder">
+                                <div class="map-marker">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="map-info">
+                                    <h4>Kampus Al-Hidayah Jakarta</h4>
+                                    <p>Jl. Pendidikan No. 123, Cilandak, Jakarta Selatan</p>
+                                    <div class="map-features">
+                                        <span><i class="fas fa-car"></i> Parkir Luas</span>
+                                        <span><i class="fas fa-bus"></i> Akses Transportasi</span>
+                                        <span><i class="fas fa-tree"></i> Lingkungan Hijau</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com/?q=Jl.+Pendidikan+No.+123,+Cilandak,+Jakarta+Selatan" class="btn btn-outline" target="_blank">
+                            <i class="fas fa-map-marked-alt"></i> Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="chat-body">
-      <div class="chat-greeting">Hai 👋<br>“Ada yang bisa kami bantu?”</div>
-      <div class="chat-option"
-        onclick="window.open('https://wa.me/14155550199?text=Assalamualikum%20pak%20,%20Saya%20.....%20Mau%20Bertanya.', '_blank')">
-        Chat Via WhatsApp <span class="arrow">→</span>
-      </div>
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pertanyaan Umum</h2>
+                <p class="section-subtitle">Temukan jawaban atas pertanyaan yang sering diajukan</p>
+                <div class="section-divider"></div>
+            </div>
 
-      <div class="chat-footer">
-        <button onclick="alert('Silakan datang ke kantor kami untuk info lebih lengkap')">
-          Informasi Lainnya
-        </button>
-      </div>
-    </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mendaftar menjadi siswa?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pendaftaran dapat dilakukan dengan cara:</p>
+                        <ul>
+                            <li>Online melalui website kami</li>
+                            <li>Datang langsung ke kantor pendaftaran</li>
+                            <li>Menghubungi bagian pendaftaran via telepon/WhatsApp</li>
+                        </ul>
+                    </div>
+                </div>
 
-    <!--CHAT WIDGET-->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada tes masuk?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, untuk jenjang SD, SMP, dan SMA terdapat tes masuk yang meliputi:</p>
+                        <ul>
+                            <li>Tes akademik (membaca, menulis, berhitung)</li>
+                            <li>Wawancara dengan siswa dan orang tua</li>
+                            <li>Observasi perilaku</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama waktu respons untuk pertanyaan via form?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tim kami akan merespons dalam waktu 1x24 jam pada hari kerja. Untuk urgensi tinggi, silakan hubungi via telepon atau WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="section departments-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Departemen</h2>
+                <p class="section-subtitle">Temukan kontak langsung untuk departemen yang Anda tuju</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="departments-grid">
+                <div class="department-card">
+                    <h3><i class="fas fa-user-plus"></i> Pendaftaran</h3>
+                    <p>Untuk informasi pendaftaran siswa baru dan administrasi</p>
+                    <div class="department-contact">
+                        <span><i class="fas fa-phone"></i> (021) 1234-5678 ext. 201</span>
+                        <span><i class="fas fa-envelope"></i> pendaftaran@alhidayah.sch.id</span>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <h3><i class="fas fa-award"></i> Beasiswa</h3>
+                    <p>Informasi program beasiswa dan bantuan pendidikan</p>
+                    <div class="department-contact">
+                        <span><i class="fas fa-phone"></i> (021) 1234-5678 ext. 202</span>
+                        <span><i class="fas fa-envelope"></i> beasiswa@alhidayah.sch.id</span>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <h3><i class="fas fa-users"></i> Humas</h3>
+                    <p>Untuk kerjasama, media, dan hubungan masyarakat</p>
+                    <div class="department-contact">
+                        <span><i class="fas fa-phone"></i> (021) 1234-5678 ext. 203</span>
+                        <span><i class="fas fa-envelope"></i> humas@alhidayah.sch.id</span>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Akademik</h3>
+                    <p>Informasi kurikulum dan program pembelajaran</p>
+                    <div class="department-contact">
+                        <span><i class="fas fa-phone"></i> (021) 1234-5678 ext. 204</span>
+                        <span><i class="fas fa-envelope"></i> akademik@alhidayah.sch.id</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam, membentuk generasi unggul yang siap menghadapi tantangan masa depan.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teacher.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Prestasi</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
-      function toggleFAQ(element) {
-        const answer = element.nextElementSibling;
-        const isOpen = answer.style.display === "block";
-
-        document.querySelectorAll('.faq-answer').forEach(el => {
-          el.style.display = 'none';
-        });
-
-        if (!isOpen) {
-          answer.style.display = 'block';
-          answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      }
-
-      function toggleChat() {
-        const panel = document.getElementById('chatPanel');
-        const icon = document.querySelector('.chat-icon');
-
-        panel.classList.toggle('active');
-        icon.classList.toggle('hide');
-      }
-    </script>
-
-
-    <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const nav = document.querySelector('.nav ul');
-      if (menuToggle && nav) {
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
         menuToggle.addEventListener('click', () => {
-          nav.classList.toggle('active');
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
         });
-      }
 
-      document.querySelectorAll('.faq-question').forEach(button => {
-        button.addEventListener('click', () => {
-          const answer = button.nextElementSibling;
-          const isOpen = answer.classList.contains('open');
-
-          document.querySelectorAll('.faq-answer').forEach(a => {
-            a.classList.remove('open');
-            a.style.maxHeight = null;
-          });
-          document.querySelectorAll('.faq-question i').forEach(icon => {
-            icon.style.transform = 'rotate(0deg)';
-          });
-
-          if (!isOpen) {
-            answer.classList.add('open');
-            button.querySelector('i').style.transform = 'rotate(180deg)';
-          }
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
+            }
         });
-      });
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
+        
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-      }, { threshold: 0.1 });
 
-      document.querySelectorAll('.section-header, .about-content p, .btn-link, [data-animate]').forEach(el => {
-        observer.observe(el);
-      });
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const allItems = document.querySelectorAll('.faq-item');
+                
+                allItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                item.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah kami terima. Tim kami akan menghubungi Anda dalam 1x24 jam.');
+            contactForm.reset();
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu
+                        if (window.innerWidth <= 768 && navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                }
+            });
+        });
     </script>
-
-    <script src="js/animate.js"></script>
 </body>
-
 </html>

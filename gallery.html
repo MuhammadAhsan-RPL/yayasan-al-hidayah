@@ -1,0 +1,713 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Yayasan Al-Hidayah</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    <a href="teacher.html" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Guru
+                    </a>
+                    <a href="gallery.html" class="nav-link active">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header gallery-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Galeri Sekolah</h1>
+                <p>Momen-momen indah dalam perjalanan pendidikan di Al-Hidayah</p>
+                <nav class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Galeri</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="section gallery-filters-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="activities">Kegiatan</button>
+                <button class="filter-btn" data-filter="facilities">Fasilitas</button>
+                <button class="filter-btn" data-filter="events">Acara</button>
+                <button class="filter-btn" data-filter="achievements">Prestasi</button>
+                <button class="filter-btn" data-filter="daily">Harian</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-grid-section bg-light">
+        <div class="container">
+            <div class="gallery-container">
+                <!-- Activities -->
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Eksperimen Sains">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Eksperimen Lab Kimia</h3>
+                                    <p>Siswa SMP melakukan eksperimen sains di laboratorium modern</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 15 Mar 2024</span>
+                                        <span><i class="fas fa-tag"></i> Kegiatan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="lab-kimia">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f8f4be?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Olahraga">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Kegiatan Olahraga</h3>
+                                    <p>Pengembangan fisik dan sportivitas melalui berbagai cabang olahraga</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 22 Mar 2024</span>
+                                        <span><i class="fas fa-tag"></i> Kegiatan</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="olahraga">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities -->
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Perpustakaan">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Perpustakaan Digital</h3>
+                                    <p>Koleksi 15.000+ buku dengan sistem digital dan ruang baca nyaman</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 10 Jan 2024</span>
+                                        <span><i class="fas fa-tag"></i> Fasilitas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="perpustakaan">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lab Komputer">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Lab Komputer Modern</h3>
+                                    <p>Fasilitas teknologi untuk pembelajaran coding dan digital literacy</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 5 Feb 2024</span>
+                                        <span><i class="fas fa-tag"></i> Fasilitas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="lab-komputer">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pesantren Kilat">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Pesantren Kilat Ramadan</h3>
+                                    <p>Kegiatan tahunan untuk penguatan karakter dan pemahaman Islam</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 15 Apr 2024</span>
+                                        <span><i class="fas fa-tag"></i> Acara</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="pesantren-kilat">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wisuda">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Wisuda Angkatan ke-25</h3>
+                                    <p>Momen kebanggaan bagi siswa dan orang tua</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 15 Jun 2024</span>
+                                        <span><i class="fas fa-tag"></i> Acara</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="wisuda">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="gallery-item" data-category="achievements">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Olimpiade">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Penghargaan Olimpiade</h3>
+                                    <p>Siswa meraih medali di kompetisi sains nasional</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 10 Agu 2024</span>
+                                        <span><i class="fas fa-tag"></i> Prestasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="olimpiade">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily Activities -->
+                <div class="gallery-item" data-category="daily">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Belajar Kelas">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Pembelajaran Interaktif</h3>
+                                    <p>Guru dan siswa berinteraksi dalam proses belajar mengajar</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 20 Mar 2024</span>
+                                        <span><i class="fas fa-tag"></i> Harian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="belajar">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="daily">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sholat Berjamaah">
+                            <div class="gallery-overlay">
+                                <div class="overlay-content">
+                                    <h3>Sholat Berjamaah</h3>
+                                    <p>Kegiatan rutin pembentukan karakter Islami</p>
+                                    <div class="gallery-meta">
+                                        <span><i class="far fa-calendar"></i> 25 Mar 2024</span>
+                                        <span><i class="fas fa-tag"></i> Harian</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-actions">
+                            <button class="btn-view" data-image="sholat">
+                                <i class="fas fa-expand"></i> Lihat Detail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center">
+                <button class="btn btn-primary" id="loadMore">
+                    <i class="fas fa-plus"></i> Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo of the Month -->
+    <section class="section photo-of-month">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Foto Bulan Ini</h2>
+                <p class="section-subtitle">Momen spesial yang terpilih sebagai foto terbaik bulan ini</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="photo-featured">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Featured Photo">
+                    <div class="featured-badge">
+                        <i class="fas fa-crown"></i> Foto Terbaik April 2024
+                    </div>
+                </div>
+                <div class="featured-info">
+                    <h3>Perpustakaan Digital di Malam Hari</h3>
+                    <div class="featured-meta">
+                        <span><i class="far fa-user"></i> Oleh: Tim Fotografi Siswa</span>
+                        <span><i class="far fa-calendar"></i> 5 April 2024</span>
+                        <span><i class="fas fa-heart"></i> 245 Suka</span>
+                    </div>
+                    <p class="featured-desc">
+                        Perpustakaan digital Al-Hidayah yang tampak megah di malam hari. Fasilitas ini menjadi tempat favorit siswa untuk belajar dan mengeksplorasi pengetahuan dengan koleksi lebih dari 15.000 buku digital dan fisik.
+                    </p>
+                    <div class="featured-stats">
+                        <div class="stat">
+                            <div class="stat-number">15,000+</div>
+                            <div class="stat-label">Koleksi Buku</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Pengunjung/Hari</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Akses Digital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery -->
+    <section class="section video-gallery bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri Video</h2>
+                <p class="section-subtitle">Momen bergerak yang tak terlupakan</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Virtual Tour">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Virtual Tour Kampus</h3>
+                        <p>Jelajahi fasilitas Al-Hidayah secara virtual</p>
+                        <span class="video-duration"><i class="far fa-clock"></i> 5:32</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pesantren Kilat">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Dokumentasi Pesantren Kilat</h3>
+                        <p>Kegiatan spiritual selama bulan Ramadan</p>
+                        <span class="video-duration"><i class="far fa-clock"></i> 8:15</span>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="OSN">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Perjalanan Olimpiade Sains</h3>
+                        <p>Kisah sukses siswa di kompetisi nasional</p>
+                        <span class="video-duration"><i class="far fa-clock"></i> 6:45</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image">
+                <img id="lightboxImg" src="" alt="">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDesc"></p>
+                <div class="lightbox-meta">
+                    <span id="lightboxDate"></span>
+                    <span id="lightboxCategory"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam, membentuk generasi unggul yang siap menghadapi tantangan masa depan.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teacher.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Prestasi</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
+            }
+        });
+        
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Gallery Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Load More
+        const loadMoreBtn = document.getElementById('loadMore');
+        let currentItems = 8;
+        
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                const allItems = document.querySelectorAll('.gallery-item');
+                
+                for (let i = currentItems; i < currentItems + 4; i++) {
+                    if (allItems[i]) {
+                        allItems[i].style.display = 'block';
+                        setTimeout(() => {
+                            allItems[i].style.opacity = '1';
+                            allItems[i].style.transform = 'scale(1)';
+                        }, 10);
+                    }
+                }
+                
+                currentItems += 4;
+                
+                if (currentItems >= allItems.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox
+        const lightboxModal = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxDesc = document.getElementById('lightboxDesc');
+        const lightboxDate = document.getElementById('lightboxDate');
+        const lightboxCategory = document.getElementById('lightboxCategory');
+        const lightboxClose = document.getElementById('lightboxClose');
+        
+        const viewButtons = document.querySelectorAll('.btn-view');
+        
+        viewButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.gallery-card');
+                const image = card.querySelector('.gallery-image img');
+                const overlay = card.querySelector('.overlay-content');
+                
+                lightboxImg.src = image.src;
+                lightboxTitle.textContent = overlay.querySelector('h3').textContent;
+                lightboxDesc.textContent = overlay.querySelector('p').textContent;
+                
+                const meta = overlay.querySelector('.gallery-meta');
+                const date = meta.querySelector('span:nth-child(1)').textContent;
+                const category = meta.querySelector('span:nth-child(2)').textContent;
+                
+                lightboxDate.textContent = date;
+                lightboxCategory.textContent = category;
+                
+                lightboxModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        lightboxClose.addEventListener('click', () => {
+            lightboxModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        lightboxModal.addEventListener('click', (e) => {
+            if (e.target === lightboxModal) {
+                lightboxModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Video Play
+        const videoCards = document.querySelectorAll('.video-card');
+        videoCards.forEach(card => {
+            card.addEventListener('click', () => {
+                alert('Video akan diputar di halaman baru. Fitur ini dalam pengembangan.');
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu
+                        if (window.innerWidth <= 768 && navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                }
+            });
+        });
+
+        // Initialize animations
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        });
+
+        // Animate on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.gallery-card, .video-card');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Initial trigger
+    </script>
+</body>
+</html>

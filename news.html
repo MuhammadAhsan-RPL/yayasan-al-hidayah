@@ -1,321 +1,669 @@
+<!-- news.html -->
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berita & Kegiatan - Yayasan Al Hidayah</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/enhancement.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita - Yayasan Al-Hidayah</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <h2>Yayasan Al Hidayah</h2>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html" class="active">Berita</a></li>
-          <li><a href="contact.html">Kontak</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menuToggle">
-        <i class="bi bi-list"></i>
-      </div>
-    </div>
-  </header>
+    <!-- Back to Top Button -->
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1>Berita & Kegiatan Terbaru</h1>
-      <p>Informasi terkini seputar kegiatan pendidikan, keagamaan, dan sosial di lingkungan Yayasan Al Hidayah.</p>
-    </div>
-  </section>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
 
-  <section class="section news-list">
-    <div class="container">
-      <div class="news-grid">
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Workshop Guru">
-          <div class="news-meta">
-            <span class="news-date">15 Januari 2026</span>
-            <span class="news-category">Kegiatan Guru</span>
-          </div>
-          <h3>Workshop Guru Internasional: Meningkatkan Kompetensi Pengajaran Abad 21</h3>
-          <p>Sebanyak 45 guru dari jenjang TK hingga SMA mengikuti workshop bersama narasumber dari Malaysia dan
-            Turki...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    <a href="teacher.html" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Guru
+                    </a>
+                    <a href="gallery.html" class="nav-link">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link active">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
+    </header>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Lab Sains">
-          <div class="news-meta">
-            <span class="news-date">12 Januari 2026</span>
-            <span class="news-category">Fasilitas</span>
-          </div>
-          <h3>Peresmian Laboratorium Sains Modern</h3>
-          <p>Yayasan meresmikan laboratorium sains terbaru yang dilengkapi peralatan canggih untuk mendukung eksperimen
-            siswa...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
+    <!-- Page Header -->
+    <section class="page-header news-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Berita & Artikel</h1>
+                <p>Informasi terbaru seputar kegiatan, prestasi, dan perkembangan Al-Hidayah</p>
+                <nav class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Berita</span>
+                </nav>
+            </div>
         </div>
+    </section>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Festival Budaya">
-          <div class="news-meta">
-            <span class="news-date">10 Januari 2026</span>
-            <span class="news-category">Kegiatan Siswa</span>
-          </div>
-          <h3>Festival Budaya Sekolah: Merayakan Keberagaman dalam Bingkai Islam</h3>
-          <p>Siswa menampilkan tarian daerah, pakaian adat, dan kuliner tradisional dalam acara tahunan yang penuh
-            makna...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
+    <!-- News Categories -->
+    <section class="section news-categories-section">
+        <div class="container">
+            <div class="news-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="academic">Akademik</button>
+                <button class="category-btn" data-category="achievement">Prestasi</button>
+                <button class="category-btn" data-category="event">Acara</button>
+                <button class="category-btn" data-category="announcement">Pengumuman</button>
+                <button class="category-btn" data-category="tips">Tips Parenting</button>
+            </div>
         </div>
+    </section>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Olimpiade">
-          <div class="news-meta">
-            <span class="news-date">8 Januari 2026</span>
-            <span class="news-category">Prestasi</span>
-          </div>
-          <h3>Siswa Raih Medali Emas Olimpiade Sains Nasional</h3>
-          <p>Muhammad Rizky (SMA) berhasil meraih medali emas dalam bidang Fisika pada OSN tingkat nasional...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
-        </div>
+    <!-- Featured News -->
+    <section class="section featured-news-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Berita Utama</h2>
+                <p class="section-subtitle">Informasi penting dan terkini dari Al-Hidayah</p>
+                <div class="section-divider"></div>
+            </div>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Ramadhan">
-          <div class="news-meta">
-            <span class="news-date">5 Januari 2026</span>
-            <span class="news-category">Keagamaan</span>
-          </div>
-          <h3>Persiapan Program Ramadhan 1447 H</h3>
-          <p>Yayasan mulai mempersiapkan rangkaian kegiatan Ramadhan seperti pesantren kilat, bazar takjil, dan
-            santunan...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
-        </div>
+            <div class="featured-news">
+                <div class="featured-news-main">
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Wisuda">
+                            <div class="featured-label">Headline</div>
+                        </div>
+                        <div class="featured-content">
+                            <div class="news-meta">
+                                <span class="news-category"><i class="fas fa-graduation-cap"></i> Akademik</span>
+                                <span class="news-date"><i class="far fa-calendar"></i> 15 Juni 2024</span>
+                            </div>
+                            <h2 class="news-title">Wisuda Angkatan ke-25: 98% Lulusan Diterima di PTN Favorit</h2>
+                            <p class="news-excerpt">Sebanyak 285 siswa SMA Al-Hidayah diwisuda dengan prestasi gemilang. 280 di antaranya diterima di PTN melalui jalur SNBP dan SNBT, dengan 45% masuk ke UI, ITB, dan UGM.</p>
+                            <div class="news-stats">
+                                <span><i class="far fa-eye"></i> 2.5k dilihat</span>
+                                <span><i class="far fa-comment"></i> 45 komentar</span>
+                                <span><i class="far fa-clock"></i> 5 menit baca</span>
+                            </div>
+                            <a href="#" class="news-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Parenting">
-          <div class="news-meta">
-            <span class="news-date">3 Januari 2026</span>
-            <span class="news-category">Orang Tua</span>
-          </div>
-          <h3>Parenting Class: Mendidik Anak di Era Digital</h3>
-          <p>Ratusan orang tua mengikuti kelas parenting yang mengangkat isu penggunaan gawai dan media sosial...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
-        </div>
+                <div class="featured-news-sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-image">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w-400&q=80" alt="OSN">
+                        </div>
+                        <div class="sidebar-content">
+                            <span class="sidebar-category">Prestasi</span>
+                            <h3>Siswa Al-Hidayah Raih 3 Medali di OSN 2024</h3>
+                            <span class="sidebar-date">10 Agustus 2024</span>
+                        </div>
+                    </div>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Beasiswa">
-          <div class="news-meta">
-            <span class="news-date">1 Januari 2026</span>
-            <span class="news-category">Beasiswa</span>
-          </div>
-          <h3>Pengumuman Penerima Beasiswa Prestasi 2026</h3>
-          <p>20 siswa berprestasi menerima beasiswa penuh dari Yayasan Al Hidayah atas prestasi akademik dan
-            non-akademik...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
-        </div>
+                    <div class="sidebar-card">
+                        <div class="sidebar-image">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Workshop">
+                        </div>
+                        <div class="sidebar-content">
+                            <span class="sidebar-category">Pengembangan</span>
+                            <h3>Workshop Guru: Mengajar di Era Digital</h3>
+                            <span class="sidebar-date">5 Agustus 2024</span>
+                        </div>
+                    </div>
 
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Study Tour">
-          <div class="news-meta">
-            <span class="news-date">28 Desember 2025</span>
-            <span class="news-category">Ekstrakurikuler</span>
-          </div>
-          <h3>Study Tour ke Museum Nasional & Masjid Istiqlal</h3>
-          <p>Siswa SMP mengikuti study tour edukatif untuk memperkuat wawasan sejarah dan kebangsaan...</p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
+                    <div class="sidebar-card">
+                        <div class="sidebar-image">
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Pesantren Kilat">
+                        </div>
+                        <div class="sidebar-content">
+                            <span class="sidebar-category">Acara</span>
+                            <h3>Pesantren Kilat Ramadan Sukses Digelar</h3>
+                            <span class="sidebar-date">20 April 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="section news-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Berita Terbaru</h2>
+                <p class="section-subtitle">Kumpulan artikel dan informasi terkini</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="news-container">
+                <!-- Academic News -->
+                <article class="news-card" data-category="academic">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Perpustakaan">
+                        <div class="news-label">Akademik</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 18 Maret 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Tim Akademik</span>
+                        </div>
+                        <h3 class="news-title">Perpustakaan Digital Resmi Dibuka dengan 15.000+ Koleksi</h3>
+                        <p class="news-excerpt">Perpustakaan digital Al-Hidayah kini dilengkapi dengan sistem otomasi terbaru dan koleksi buku yang terus bertambah.</p>
+                        <div class="news-tags">
+                            <span>Perpustakaan</span>
+                            <span>Teknologi</span>
+                            <span>Literasi</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="academic">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Kurikulum">
+                        <div class="news-label">Akademik</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 12 Maret 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Dr. Ahmad Syafii</span>
+                        </div>
+                        <h3 class="news-title">Kurikulum 2024: Integrasi Sains dan Nilai Islam</h3>
+                        <p class="news-excerpt">Al-Hidayah meluncurkan kurikulum terbaru yang mengintegrasikan perkembangan sains dengan nilai-nilai Islam secara lebih mendalam.</p>
+                        <div class="news-tags">
+                            <span>Kurikulum</span>
+                            <span>Sains</span>
+                            <span>Pendidikan Islam</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Achievement News -->
+                <article class="news-card" data-category="achievement">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Olimpiade">
+                        <div class="news-label">Prestasi</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 10 Agustus 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Tim Olimpiade</span>
+                        </div>
+                        <h3 class="news-title">Siswa Al-Hidayah Raih 3 Medali di OSN 2024</h3>
+                        <p class="news-excerpt">Tim olimpiade kami kembali mengharumkan nama sekolah dengan meraih 1 emas dan 2 perak di OSN Matematika dan IPA tingkat nasional.</p>
+                        <div class="news-tags">
+                            <span>Olimpiade</span>
+                            <span>Prestasi</span>
+                            <span>Nasional</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Event News -->
+                <article class="news-card" data-category="event">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pesantren Kilat">
+                        <div class="news-label">Acara</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 20 April 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Tim Kegiatan</span>
+                        </div>
+                        <h3 class="news-title">Pesantren Kilat Ramadan Sukses Digelar</h3>
+                        <p class="news-excerpt">Kegiatan tahunan untuk penguatan karakter Islami diikuti oleh 500+ siswa dengan berbagai kegiatan menarik dan bermanfaat.</p>
+                        <div class="news-tags">
+                            <span>Ramadan</span>
+                            <span>Pesantren Kilat</span>
+                            <span>Karakter</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Announcement News -->
+                <article class="news-card" data-category="announcement">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Pendaftaran">
+                        <div class="news-label">Pengumuman</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 1 Maret 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Bagian Pendaftaran</span>
+                        </div>
+                        <h3 class="news-title">Pendaftaran Siswa Baru 2024/2025 Dibuka</h3>
+                        <p class="news-excerpt">Yayasan Al-Hidayah membuka pendaftaran siswa baru untuk tahun ajaran 2024/2025. Kuota terbatas, segera daftarkan putra-putri Anda.</p>
+                        <div class="news-tags">
+                            <span>Pendaftaran</span>
+                            <span>Siswa Baru</span>
+                            <span>2024/2025</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Tips Parenting -->
+                <article class="news-card" data-category="tips">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Parenting">
+                        <div class="news-label">Tips Parenting</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar"></i> 25 Februari 2024</span>
+                            <span class="news-author"><i class="far fa-user"></i> Nadia Rahman, M.Psi.</span>
+                        </div>
+                        <h3 class="news-title">Tips Membangun Komunikasi Efektif dengan Remaja</h3>
+                        <p class="news-excerpt">Psikolog sekolah membagikan tips praktis untuk orang tua dalam membangun komunikasi yang sehat dengan anak remaja.</p>
+                        <div class="news-tags">
+                            <span>Parenting</span>
+                            <span>Psikologi</span>
+                            <span>Remaja</span>
+                        </div>
+                        <a href="#" class="news-link">Baca Artikel <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center">
+                <button class="btn btn-primary" id="loadMoreNews">
+                    <i class="fas fa-plus"></i> Muat Lebih Banyak Artikel
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular News -->
+    <section class="section popular-news-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Artikel Populer</h2>
+                <p class="section-subtitle">Yang paling banyak dibaca minggu ini</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="popular-news">
+                <div class="popular-card">
+                    <div class="popular-number">1</div>
+                    <div class="popular-content">
+                        <h3>Strategi Sukses Masuk PTN Favorit</h3>
+                        <div class="popular-meta">
+                            <span><i class="far fa-eye"></i> 3.2k dilihat</span>
+                            <span><i class="far fa-clock"></i> 8 menit baca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-number">2</div>
+                    <div class="popular-content">
+                        <h3>Mengembangkan Bakat Anak di Era Digital</h3>
+                        <div class="popular-meta">
+                            <span><i class="far fa-eye"></i> 2.8k dilihat</span>
+                            <span><i class="far fa-clock"></i> 6 menit baca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-number">3</div>
+                    <div class="popular-content">
+                        <h3>Program Tahfizh: Metode & Manfaatnya</h3>
+                        <div class="popular-meta">
+                            <span><i class="far fa-eye"></i> 2.5k dilihat</span>
+                            <span><i class="far fa-clock"></i> 7 menit baca</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popular-card">
+                    <div class="popular-number">4</div>
+                    <div class="popular-content">
+                        <h3>Peran Orang Tua dalam Pendidikan Karakter</h3>
+                        <div class="popular-meta">
+                            <span><i class="far fa-eye"></i> 2.3k dilihat</span>
+                            <span><i class="far fa-clock"></i> 5 menit baca</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="section newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-info">
+                    <h2>Dapatkan Update Terbaru</h2>
+                    <p>Berlangganan newsletter kami untuk mendapatkan informasi terbaru tentang kegiatan, tips parenting, dan perkembangan pendidikan di Al-Hidayah.</p>
+                    <div class="newsletter-stats">
+                        <div class="stat">
+                            <div class="stat-number">5,000+</div>
+                            <div class="stat-label">Subscriber</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Kepuasan Pembaca</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="newsletter-form">
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="email@anda.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori Minat</label>
+                            <select multiple>
+                                <option value="academic">Akademik</option>
+                                <option value="event">Acara Sekolah</option>
+                                <option value="parenting">Tips Parenting</option>
+                                <option value="achievement">Prestasi</option>
+                            </select>
+                            <small class="form-hint">Tahan Ctrl untuk memilih lebih dari satu</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Berlangganan Sekarang
+                        </button>
+                        <p class="form-note">Dengan berlangganan, Anda menyetujui <a href="#">Kebijakan Privasi</a> kami.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam, membentuk generasi unggul yang siap menghadapi tantangan masa depan.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teacher.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Prestasi</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
         
-        <div class="news-card" data-animate>
-          <img src="picture/Gambar Al - Hidayah.png" alt="Graduation">
-          <div class="news-meta">
-            <span class="news-date">20 Desember 2025</span>
-            <span class="news-category">Wisuda</span>
-          </div>
-          <h3>Wisuda Angkatan ke-12: Generasi Qur’ani Siap Menginspirasi</h3>
-          <p>120 lulusan SMA Al Hidayah Islamic School diwisuda dengan tema “Generasi Qur’ani, Pemimpin Masa Depan”...
-          </p>
-          <a href="#" class="read-more">Baca Selengkapnya →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="footer-container">
-
-      <div class="footer-col">
-        <h3>Yayasan Al Hidayah</h3>
-        <p>
-          Yayasan pendidikan Islam yang berkomitmen melahirkan generasi berilmu, berakhlak mulia, dan berdaya saing
-          global.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigasi</h4>
-        <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="programs.html">Program</a></li>
-          <li><a href="news.html">Berita</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Program Pendidikan</h4>
-        <ul>
-          <li>SD Islam Terpadu</li>
-          <li>SMP Islam Terpadu</li>
-          <li>SMA Islam Terpadu</li>
-          <li>Tahfidz Al-Qur’an</li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-contact">
-        <h4>Hubungi Kami</h4>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" alt="WhatsApp">
-          <span>WhatsApp</span>
-        </a>
-
-        <!-- Email -->
-        <a href="mailto:info@alhidayah.sch.id" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
-          <span>info@alhidayah.sch.id</span>
-        </a>
-
-        <!-- Lokasi -->
-        <a href="https://maps.app.goo.gl/bSsLNczox5xMHXNe7" target="_blank" class="contact-item">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Lokasi">
-          <span>
-            Temukan Lokasi Kami
-          </span>
-        </a>
-
-        <!-- Sosial Media -->
-        <div class="footer-social">
-          <a href="https://instagram.com/USERNAME" target="_blank" aria-label="Instagram">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
-          </a>
-          <a href="https://youtube.com/USERNAME" target="_blank" aria-label="YouTube">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
-          </a>
-          <a href="https://facebook.com/USERNAME" target="_blank" aria-label="Facebook">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Yayasan Al Hidayah. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- CHAT WIDGET -->
-  <!-- CHAT WIDGET -->
-  <div class="chat-widget" id="chatWidget">
-    <div class="chat-icon" onclick="toggleChat()">
-      <span class="chat-badge"></span>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
-      </svg>
-    </div>
-  </div>
-
-  <div class="chat-panel" id="chatPanel">
-    <div class="chat-header">
-      <div>
-        <strong>Service Team</strong>
-        <span class="status">Online</span>
-      </div>
-      <button class="close-btn" onclick="toggleChat()">×</button>
-    </div>
-
-    <div class="chat-body">
-      <div class="chat-greeting">Hai 👋<br>“Ada yang bisa kami bantu?”</div>
-      <div class="chat-option"
-        onclick="window.open('https://wa.me/14155550199?text=Assalamualikum%20pak%20,%20Saya%20.....%20Mau%20Bertanya.', '_blank')">
-        Chat Via WhatsApp <span class="arrow">→</span>
-      </div>
-
-      <div class="chat-footer">
-        <button onclick="alert('Silakan datang ke kantor kami untuk info lebih lengkap')">
-          Informasi Lainnya
-        </button>
-      </div>
-    </div>
-
-    <!--CHAT WIDGET-->
-    <script>
-      function toggleFAQ(element) {
-        const answer = element.nextElementSibling;
-        const isOpen = answer.style.display === "block";
-
-        document.querySelectorAll('.faq-answer').forEach(el => {
-          el.style.display = 'none';
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
         });
 
-        if (!isOpen) {
-          answer.style.display = 'block';
-          answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        }
-      }
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
+            }
+        });
+        
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-      function toggleChat() {
-        const panel = document.getElementById('chatPanel');
-        const icon = document.querySelector('.chat-icon');
-
-        panel.classList.toggle('active');
-        icon.classList.toggle('hide');
-      }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const items = document.querySelectorAll(".news-card[data-animate]");
-
-        if (!items.length) {
-          console.warn("Tidak ada elemen data-animate ditemukan");
-          return;
-        }
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-                observer.unobserve(entry.target);
-              }
+        // News Categories Filter
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const newsCards = document.querySelectorAll('.news-card');
+        
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const category = button.getAttribute('data-category');
+                
+                // Filter news cards
+                newsCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
             });
-          },
-          {
-            threshold: 0.15,
-            rootMargin: "0px 0px -60px 0px",
-          }
-        );
-
-        items.forEach((item, index) => {
-          item.style.transitionDelay = `${index * 120}ms`;
-          observer.observe(item);
         });
-      });
-    </script>
-    <script src="js/animate.js"></script>
-</body>
 
+        // Load More News
+        const loadMoreBtn = document.getElementById('loadMoreNews');
+        let currentNews = 6;
+        
+        if (loadMoreBtn) {
+            loadMoreBtn.addEventListener('click', () => {
+                const allCards = document.querySelectorAll('.news-card');
+                
+                for (let i = currentNews; i < currentNews + 3; i++) {
+                    if (allCards[i]) {
+                        allCards[i].style.display = 'block';
+                        setTimeout(() => {
+                            allCards[i].style.opacity = '1';
+                            allCards[i].style.transform = 'translateY(0)';
+                        }, 10);
+                    }
+                }
+                
+                currentNews += 3;
+                
+                if (currentNews >= allCards.length) {
+                    loadMoreBtn.style.display = 'none';
+                }
+            });
+        }
+
+        // Newsletter Form
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Terima kasih! Anda telah berhasil berlangganan newsletter Al-Hidayah. Anda akan menerima edisi pertama dalam 1-2 hari kerja.');
+                newsletterForm.reset();
+            });
+        }
+
+        // Popular Cards Hover Effect
+        const popularCards = document.querySelectorAll('.popular-card');
+        popularCards.forEach((card, index) => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+            
+            // Add click event to redirect to article
+            card.addEventListener('click', () => {
+                alert(`Membuka artikel populer nomor ${index + 1}. Fitur ini dalam pengembangan.`);
+            });
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu
+                        if (window.innerWidth <= 768 && navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                }
+            });
+        });
+
+        // Initialize animations
+        document.querySelectorAll('.news-card, .featured-card, .sidebar-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        });
+
+        // Animate on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.news-card, .featured-card, .sidebar-card, .popular-card');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Initial trigger
+    </script>
+</body>
 </html>

@@ -1,0 +1,1070 @@
+<!-- registration.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa Baru - Yayasan Al-Hidayah</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281212345678" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    <a href="teacher.html" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Guru 
+                    </a>
+                    <a href="gallery.html" class="nav-link">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small active">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header registration-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Pendaftaran Siswa Baru</h1>
+                <p>Tahun Ajaran 2024/2025 - Membuka Generasi Emas Islami</p>
+                <nav class="breadcrumb">
+                    <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Pendaftaran</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Progress -->
+    <section class="section progress-section">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <span class="step-label">Pilih Jenjang</span>
+                        <span class="step-desc">Tentukan Program</span>
+                    </div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <span class="step-label">Isi Data</span>
+                        <span class="step-desc">Formulir Online</span>
+                    </div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <span class="step-label">Unggah Dokumen</span>
+                        <span class="step-desc">Berkas Pendukung</span>
+                    </div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <span class="step-label">Konfirmasi</span>
+                        <span class="step-desc">Review & Submit</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Selection -->
+    <section class="section program-selection bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pilih Program Pendidikan</h2>
+                <p class="section-subtitle">Pilih jenjang pendidikan yang sesuai untuk putra/putri Anda</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="program-cards">
+                <div class="program-option" data-program="paud">
+                    <div class="program-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>PAUD Al-Hidayah</h3>
+                    <p class="program-age">Usia 2-6 Tahun</p>
+                    <div class="program-features">
+                        <span><i class="fas fa-check"></i> Full Day Program</span>
+                        <span><i class="fas fa-check"></i> Montessori Based</span>
+                        <span><i class="fas fa-check"></i> Islamic Character Building</span>
+                    </div>
+                    <p class="program-fee">Biaya Pendaftaran: Rp 500.000</p>
+                    <button class="btn-select" data-program="paud">Pilih Program Ini</button>
+                </div>
+
+                <div class="program-option" data-program="sd">
+                    <div class="program-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>SD Islam Al-Hidayah</h3>
+                    <p class="program-age">Kelas 1-6</p>
+                    <div class="program-features">
+                        <span><i class="fas fa-check"></i> Kurikulum Nasional Plus</span>
+                        <span><i class="fas fa-check"></i> Program Tahfizh</span>
+                        <span><i class="fas fa-check"></i> Bilingual Class</span>
+                    </div>
+                    <p class="program-fee">Biaya Pendaftaran: Rp 750.000</p>
+                    <button class="btn-select" data-program="sd">Pilih Program Ini</button>
+                </div>
+
+                <div class="program-option" data-program="smp">
+                    <div class="program-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>SMP Islam Al-Hidayah</h3>
+                    <p class="program-age">Kelas 7-9</p>
+                    <div class="program-features">
+                        <span><i class="fas fa-check"></i> Kelas Bilingual</span>
+                        <span><i class="fas fa-check"></i> Lab Sains & IT</span>
+                        <span><i class="fas fa-check"></i> Leadership Program</span>
+                    </div>
+                    <p class="program-fee">Biaya Pendaftaran: Rp 850.000</p>
+                    <button class="btn-select" data-program="smp">Pilih Program Ini</button>
+                </div>
+
+                <div class="program-option" data-program="sma">
+                    <div class="program-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>SMA Islam Al-Hidayah</h3>
+                    <p class="program-age">Kelas 10-12</p>
+                    <div class="program-features">
+                        <span><i class="fas fa-check"></i> Peminatan IPA/IPS/Bahasa</span>
+                        <span><i class="fas fa-check"></i> College Preparation</span>
+                        <span><i class="fas fa-check"></i> Career Guidance</span>
+                    </div>
+                    <p class="program-fee">Biaya Pendaftaran: Rp 950.000</p>
+                    <button class="btn-select" data-program="sma">Pilih Program Ini</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section registration-form-section">
+        <div class="container">
+            <div class="form-container" id="registrationFormContainer" style="display: none;">
+                <div class="form-header">
+                    <h2>Formulir Pendaftaran Online</h2>
+                    <p>Isi data dengan lengkap dan benar sesuai dokumen resmi</p>
+                    <div class="selected-program">
+                        Program Terpilih: <span id="selectedProgramName">-</span>
+                    </div>
+                </div>
+
+                <form id="registrationForm">
+                    <!-- Data Calon Siswa -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user-graduate"></i> Data Calon Siswa</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Lengkap Sesuai Akte *</label>
+                                <input type="text" id="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Nama Panggilan *</label>
+                                <input type="text" id="nickname" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Tempat Lahir *</label>
+                                <input type="text" id="birthPlace" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Tanggal Lahir *</label>
+                                <input type="date" id="birthDate" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Jenis Kelamin *</label>
+                                <select id="gender" required>
+                                    <option value="">Pilih Jenis Kelamin</option>
+                                    <option value="L">Laki-laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Agama *</label>
+                                <select id="religion" required>
+                                    <option value="">Pilih Agama</option>
+                                    <option value="islam">Islam</option>
+                                    <option value="kristen">Kristen</option>
+                                    <option value="katolik">Katolik</option>
+                                    <option value="hindu">Hindu</option>
+                                    <option value="buddha">Buddha</option>
+                                    <option value="konghucu">Konghucu</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Alamat Rumah *</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Kota *</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Kode Pos</label>
+                                <input type="text" id="postalCode">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Orang Tua -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-users"></i> Data Orang Tua/Wali</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Ayah *</label>
+                                <input type="text" id="fatherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Pekerjaan Ayah *</label>
+                                <input type="text" id="fatherOccupation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>No. HP Ayah *</label>
+                                <input type="tel" id="fatherPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Ayah *</label>
+                                <input type="email" id="fatherEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Nama Ibu *</label>
+                                <input type="text" id="motherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Pekerjaan Ibu *</label>
+                                <input type="text" id="motherOccupation" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>No. HP Ibu *</label>
+                                <input type="tel" id="motherPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email Ibu *</label>
+                                <input type="email" id="motherEmail" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Pendidikan Sebelumnya -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-school"></i> Data Pendidikan Sebelumnya</h3>
+                        
+                        <div class="form-group">
+                            <label>Asal Sekolah *</label>
+                            <input type="text" id="previousSchool" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Alamat Sekolah *</label>
+                                <input type="text" id="schoolAddress" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Tahun Lulus *</label>
+                                <input type="number" id="graduationYear" min="2010" max="2024" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informasi Tambahan -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-info-circle"></i> Informasi Tambahan</h3>
+                        
+                        <div class="form-group">
+                            <label>Motivasi Masuk Al-Hidayah *</label>
+                            <textarea id="motivation" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Apakah memiliki saudara kandung di Al-Hidayah?</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="sibling" value="yes"> Ya
+                                </label>
+                                <label>
+                                    <input type="radio" name="sibling" value="no" checked> Tidak
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="siblingInfo" style="display: none;">
+                            <label>Nama Saudara Kandung di Al-Hidayah</label>
+                            <input type="text" id="siblingName">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Dari mana Anda mengetahui Al-Hidayah? *</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="source[]" value="website"> Website</label>
+                                <label><input type="checkbox" name="source[]" value="social-media"> Media Sosial</label>
+                                <label><input type="checkbox" name="source[]" value="friend"> Teman/Keluarga</label>
+                                <label><input type="checkbox" name="source[]" value="event"> Acara Sekolah</label>
+                                <label><input type="checkbox" name="source[]" value="other"> Lainnya</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upload Dokumen -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-file-upload"></i> Unggah Dokumen</h3>
+                        
+                        <div class="upload-section">
+                            <div class="upload-item">
+                                <label>Foto 3x4 (max 2MB) *</label>
+                                <div class="upload-box">
+                                    <i class="fas fa-camera"></i>
+                                    <p>Seret file atau klik untuk memilih</p>
+                                    <input type="file" accept="image/*" id="photo" required>
+                                </div>
+                            </div>
+
+                            <div class="upload-item">
+                                <label>Akte Kelahiran (max 5MB) *</label>
+                                <div class="upload-box">
+                                    <i class="fas fa-file-alt"></i>
+                                    <p>Seret file atau klik untuk memilih</p>
+                                    <input type="file" accept=".pdf,.jpg,.png" id="birthCertificate" required>
+                                </div>
+                            </div>
+
+                            <div class="upload-item">
+                                <label>Kartu Keluarga (max 5MB) *</label>
+                                <div class="upload-box">
+                                    <i class="fas fa-file-alt"></i>
+                                    <p>Seret file atau klik untuk memilih</p>
+                                    <input type="file" accept=".pdf,.jpg,.png" id="familyCard" required>
+                                </div>
+                            </div>
+
+                            <div class="upload-item">
+                                <label>Raport Terakhir (max 5MB)</label>
+                                <div class="upload-box">
+                                    <i class="fas fa-file-alt"></i>
+                                    <p>Seret file atau klik untuk memilih</p>
+                                    <input type="file" accept=".pdf,.jpg,.png" id="reportCard">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="form-section terms-section">
+                        <div class="terms-box">
+                            <h4><i class="fas fa-gavel"></i> Persetujuan</h4>
+                            <div class="terms-content">
+                                <p>Dengan mendaftar, saya menyatakan bahwa:</p>
+                                <ol>
+                                    <li>Data yang diisi adalah benar dan dapat dipertanggungjawabkan</li>
+                                    <li>Bersedia mengikuti seluruh prosedur seleksi yang ditetapkan</li>
+                                    <li>Mematuhi peraturan dan tata tertib sekolah</li>
+                                    <li>Setuju dengan biaya pendidikan yang berlaku</li>
+                                    <li>Biaya pendaftaran tidak dapat dikembalikan dalam kondisi apapun</li>
+                                </ol>
+                            </div>
+                            <label class="checkbox-terms">
+                                <input type="checkbox" id="agreeTerms" required>
+                                <span>Saya telah membaca dan menyetujui seluruh persyaratan di atas *</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Form Actions -->
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="btnBack">
+                            <i class="fas fa-arrow-left"></i> Kembali
+                        </button>
+                        <button type="submit" class="btn btn-primary" id="btnSubmit">
+                            <i class="fas fa-paper-plane"></i> Kirim Pendaftaran
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Registration Info -->
+            <div class="registration-info" id="registrationInfo">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Jadwal Pendaftaran</h3>
+                        <p><strong>Gelombang 1:</strong> 1 Jan - 31 Mar 2024</p>
+                        <p><strong>Gelombang 2:</strong> 1 Apr - 30 Jun 2024</p>
+                        <p><strong>Gelombang 3:</strong> 1 Jul - 31 Agu 2024</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Informasi Biaya</h3>
+                        <p>Biaya pendaftaran sudah termasuk:</p>
+                        <ul>
+                            <li>Formulir pendaftaran</li>
+                            <li>Proses seleksi administrasi</li>
+                            <li>Tes masuk dan wawancara</li>
+                            <li>Kartu peserta seleksi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Persyaratan Umum</h3>
+                        <ul>
+                            <li>Memenuhi batas usia sesuai jenjang</li>
+                            <li>Foto 3x4 berwarna (2 lembar)</li>
+                            <li>Fotokopi akte kelahiran</li>
+                            <li>Fotokopi kartu keluarga</li>
+                            <li>Raport nilai (untuk pindahan)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Butuh Bantuan?</h3>
+                        <p>Tim pendaftaran kami siap membantu:</p>
+                        <p><strong>Telepon:</strong> (021) 1234-5678 ext. 201</p>
+                        <p><strong>WhatsApp:</strong> 0812-1234-5678</p>
+                        <p><strong>Email:</strong> pendaftaran@alhidayah.sch.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Schedule -->
+    <section class="section test-schedule bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Jadwal Tes Masuk</h2>
+                <p class="section-subtitle">Persiapkan diri untuk mengikuti tes seleksi</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="schedule-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gelombang</th>
+                            <th>Tanggal Tes</th>
+                            <th>Waktu</th>
+                            <th>Materi Tes</th>
+                            <th>Pengumuman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gelombang 1</td>
+                            <td>6 April 2024</td>
+                            <td>08:00 - 12:00</td>
+                            <td>Akademik & Wawancara</td>
+                            <td>13 April 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Gelombang 2</td>
+                            <td>6 Juli 2024</td>
+                            <td>08:00 - 12:00</td>
+                            <td>Akademik & Wawancara</td>
+                            <td>13 Juli 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Gelombang 3</td>
+                            <td>7 September 2024</td>
+                            <td>08:00 - 12:00</td>
+                            <td>Akademik & Wawancara</td>
+                            <td>14 September 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Info -->
+    <section class="section scholarship-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Program Beasiswa</h2>
+                <p class="section-subtitle">Kesempatan pendidikan berkualitas untuk siswa berprestasi</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="scholarship-cards">
+                <div class="scholarship-card">
+                    <div class="scholarship-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Beasiswa Prestasi</h3>
+                    <p>Untuk siswa dengan prestasi akademik atau non-akademik di tingkat nasional/internasional</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Potongan 50-100% SPP</li>
+                        <li><i class="fas fa-check"></i> Bebas biaya pendaftaran</li>
+                        <li><i class="fas fa-check"></i> Program khusus mentoring</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">Info Selengkapnya</a>
+                </div>
+
+                <div class="scholarship-card">
+                    <div class="scholarship-icon">
+                        <i class="fas fa-quran"></i>
+                    </div>
+                    <h3>Beasiswa Tahfizh</h3>
+                    <p>Untuk hafizh/hafizhah dengan hafalan minimal 5 juz</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Potongan 30-70% SPP</li>
+                        <li><i class="fas fa-check"></i> Program tahfizh intensif</li>
+                        <li><i class="fas fa-check"></i> Bimbingan khusus</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">Info Selengkapnya</a>
+                </div>
+
+                <div class="scholarship-card">
+                    <div class="scholarship-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Beasiswa Sosial</h3>
+                    <p>Untuk siswa dari keluarga kurang mampu dengan prestasi akademik baik</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Potongan 25-50% SPP</li>
+                        <li><i class="fas fa-check"></i> Bantuan seragam dan buku</li>
+                        <li><i class="fas fa-check"></i> Program pendampingan</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">Info Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pertanyaan Umum Pendaftaran</h2>
+                <p class="section-subtitle">Temukan jawaban atas pertanyaan yang sering diajukan</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah bisa mendaftar lebih dari satu jenjang?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tidak, setiap calon siswa hanya dapat mendaftar pada satu jenjang pendidikan yang sesuai dengan usia dan kualifikasi.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana sistem pembayaran biaya pendaftaran?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pembayaran dapat dilakukan melalui:</p>
+                        <ul>
+                            <li>Transfer bank ke rekening Yayasan Al-Hidayah</li>
+                            <li>Pembayaran langsung di kantor administrasi</li>
+                            <li>Virtual account melalui sistem pembayaran online</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah ada tes khusus untuk program tahfizh?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, untuk program tahfizh terdapat tes hafalan tambahan. Calon siswa akan dinilai kemampuan menghafal dan tajwid.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama proses verifikasi pendaftaran online?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proses verifikasi memakan waktu 1-3 hari kerja setelah data lengkap diterima. Status pendaftaran dapat dicek melalui akun Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam, membentuk generasi unggul yang siap menghadapi tantangan masa depan.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teacher.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Prestasi</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-check-circle"></i> Pendaftaran Berhasil!</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h4>Terima kasih telah mendaftar di Yayasan Al-Hidayah</h4>
+                <p>Data pendaftaran Anda telah berhasil dikirim. Berikut detail pendaftaran:</p>
+                
+                <div class="registration-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Nomor Pendaftaran:</span>
+                        <span class="detail-value" id="registrationNumber">REG-2024-00123</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Program:</span>
+                        <span class="detail-value" id="modalProgram">SD Islam Al-Hidayah</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Nama Calon Siswa:</span>
+                        <span class="detail-value" id="modalStudentName">-</span>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h5>Langkah Selanjutnya:</h5>
+                    <ol>
+                        <li>Cek email untuk konfirmasi pendaftaran</li>
+                        <li>Selesaikan pembayaran biaya pendaftaran</li>
+                        <li>Ikuti tes masuk sesuai jadwal yang ditentukan</li>
+                        <li>Pantau pengumuman hasil seleksi</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="btnPrint">
+                    <i class="fas fa-print"></i> Cetak Bukti Pendaftaran
+                </button>
+                <button class="btn btn-primary" id="btnCloseModal">
+                    <i class="fas fa-home"></i> Kembali ke Beranda
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
+            }
+        });
+        
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Program Selection
+        const programOptions = document.querySelectorAll('.program-option');
+        const btnSelects = document.querySelectorAll('.btn-select');
+        const formContainer = document.getElementById('registrationFormContainer');
+        const registrationInfo = document.getElementById('registrationInfo');
+        const selectedProgramName = document.getElementById('selectedProgramName');
+        let selectedProgram = '';
+
+        // Program data
+        const programData = {
+            'paud': 'PAUD Al-Hidayah',
+            'sd': 'SD Islam Al-Hidayah',
+            'smp': 'SMP Islam Al-Hidayah',
+            'sma': 'SMA Islam Al-Hidayah'
+        };
+
+        btnSelects.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all options
+                programOptions.forEach(option => {
+                    option.classList.remove('selected');
+                });
+                
+                // Add active class to selected option
+                const program = button.getAttribute('data-program');
+                const parentOption = button.closest('.program-option');
+                parentOption.classList.add('selected');
+                
+                // Update selected program
+                selectedProgram = program;
+                selectedProgramName.textContent = programData[program];
+                
+                // Show form and hide info
+                formContainer.style.display = 'block';
+                registrationInfo.style.display = 'none';
+                
+                // Scroll to form
+                formContainer.scrollIntoView({ behavior: 'smooth' });
+                
+                // Update progress bar
+                updateProgressBar(2);
+            });
+        });
+
+        // Update progress bar
+        function updateProgressBar(step) {
+            const progressSteps = document.querySelectorAll('.progress-step');
+            progressSteps.forEach((stepElement, index) => {
+                if (index < step) {
+                    stepElement.classList.add('active');
+                } else {
+                    stepElement.classList.remove('active');
+                }
+            });
+        }
+
+        // Back button
+        const btnBack = document.getElementById('btnBack');
+        btnBack.addEventListener('click', () => {
+            formContainer.style.display = 'none';
+            registrationInfo.style.display = 'block';
+            updateProgressBar(1);
+        });
+
+        // Sibling info toggle
+        const siblingRadios = document.querySelectorAll('input[name="sibling"]');
+        const siblingInfo = document.getElementById('siblingInfo');
+        
+        siblingRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'yes') {
+                    siblingInfo.style.display = 'block';
+                } else {
+                    siblingInfo.style.display = 'none';
+                }
+            });
+        });
+
+        // File upload preview
+        const fileInputs = document.querySelectorAll('input[type="file"]');
+        fileInputs.forEach(input => {
+            input.addEventListener('change', function() {
+                const uploadBox = this.parentElement;
+                if (this.files.length > 0) {
+                    uploadBox.style.backgroundColor = '#e8f5e8';
+                    uploadBox.style.borderColor = '#2ecc71';
+                    uploadBox.querySelector('p').textContent = this.files[0].name;
+                }
+            });
+        });
+
+        // Form submission
+        const registrationForm = document.getElementById('registrationForm');
+        const successModal = document.getElementById('successModal');
+        const modalStudentName = document.getElementById('modalStudentName');
+        const modalProgram = document.getElementById('modalProgram');
+        const modalClose = document.getElementById('modalClose');
+        const btnCloseModal = document.getElementById('btnCloseModal');
+        const btnPrint = document.getElementById('btnPrint');
+
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const studentName = document.getElementById('studentName').value;
+            const program = programData[selectedProgram];
+            
+            // Update modal content
+            modalStudentName.textContent = studentName;
+            modalProgram.textContent = program;
+            
+            // Generate registration number
+            const registrationNumber = document.getElementById('registrationNumber');
+            const randomNum = Math.floor(Math.random() * 1000).toString().padStart(3, '0');
+            registrationNumber.textContent = `REG-2024-${randomNum}`;
+            
+            // Show success modal
+            successModal.style.display = 'flex';
+            
+            // Reset form
+            registrationForm.reset();
+            
+            // Update progress bar
+            updateProgressBar(4);
+        });
+
+        // Modal close
+        modalClose.addEventListener('click', () => {
+            successModal.style.display = 'none';
+        });
+
+        btnCloseModal.addEventListener('click', () => {
+            successModal.style.display = 'none';
+            window.location.href = 'index.html';
+        });
+
+        // Print registration proof
+        btnPrint.addEventListener('click', () => {
+            const registrationNumber = document.getElementById('registrationNumber').textContent;
+            const studentName = document.getElementById('modalStudentName').textContent;
+            const program = document.getElementById('modalProgram').textContent;
+            
+            const printContent = `
+                <html>
+                <head>
+                    <title>Bukti Pendaftaran - Yayasan Al-Hidayah</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; padding: 20px; }
+                        .header { text-align: center; margin-bottom: 30px; }
+                        .logo { font-size: 24px; font-weight: bold; color: #1a4b8c; }
+                        .subtitle { color: #666; margin-bottom: 20px; }
+                        .details { border: 1px solid #ddd; padding: 20px; border-radius: 10px; }
+                        .detail-item { margin-bottom: 10px; }
+                        .label { font-weight: bold; color: #333; }
+                        .value { color: #555; }
+                        .footer { margin-top: 30px; text-align: center; color: #666; font-size: 12px; }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <div class="logo">Yayasan Al-Hidayah</div>
+                        <div class="subtitle">Bukti Pendaftaran Siswa Baru</div>
+                    </div>
+                    <div class="details">
+                        <div class="detail-item">
+                            <span class="label">Nomor Pendaftaran: </span>
+                            <span class="value">${registrationNumber}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Program: </span>
+                            <span class="value">${program}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Nama Calon Siswa: </span>
+                            <span class="value">${studentName}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Tanggal Pendaftaran: </span>
+                            <span class="value">${new Date().toLocaleDateString('id-ID')}</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Status: </span>
+                            <span class="value">Menunggu Verifikasi</span>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>Simpan dokumen ini sebagai bukti pendaftaran Anda</p>
+                        <p>Yayasan Al-Hidayah &copy; 2024</p>
+                    </div>
+                </body>
+                </html>
+            `;
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(printContent);
+            printWindow.document.close();
+            printWindow.print();
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu
+                        if (window.innerWidth <= 768 && navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
