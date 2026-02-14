@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi - Yayasan Al-Hidayah Lembah Hijau</title>
+    
+    <!-- Font Google - SAMA PERSIS DENGAN HALAMAN UTAMA -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Utama - PASTI NAMA FILE NYA index.css (bukan style.css) -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- CSS Khusus Struktur -->
+    <link rel="stylesheet" href="css/struktur.css">
+</head>
+
+<body>
+   <div class="wrapper">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Yayasan <span class="highlight">Al-Hidayah</span></h1>
+                        <p class="logo-subtitle">Pendidikan Islam Berkualitas</p>
+                    </div>
+                </div>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Beranda
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> Tentang
+                    </a>
+                    <a href="programs.html" class="nav-link">
+                        <i class="fas fa-school"></i> Program
+                    </a>
+                    
+                    <!-- DROPDOWN STRUKTUR -->
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">
+                            <i class="fas fa-sitemap"></i> Struktur
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="struktur-organisasi.html">
+                                <i class="fas fa-building"></i> Struktur Yayasan
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="teacher&staff.html">
+                                <i class="fas fa-chalkboard-teacher"></i> Daftar Guru & Staff
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="gallery.html" class="nav-link">
+                        <i class="fas fa-images"></i> Galeri
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="fas fa-newspaper"></i> Berita
+                    </a>
+                    <a href="contact.html" class="nav-link">
+                        <i class="fas fa-phone-alt"></i> Kontak
+                    </a>
+                    <a href="registration.html" class="btn btn-primary btn-small">
+                        <i class="fas fa-user-plus"></i> Daftar
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+
+        <!-- PAGE TITLE -->
+        <section class="page-title" style="background: #0b4d3b;">
+            <div class="container">
+                <h2>STRUKTUR ORGANISASI</h2>
+                <p>YAYASAN AL-HIDAYAH LEMBAH HIJAU | PERIODE 2025 - 2030</p>
+            </div>
+        </section>
+
+        <!-- MAIN CONTENT - PROFESIONAL -->
+        <div class="struktur-container">
+            
+            <!-- ========================================= -->
+            <!-- BARIS 1: PEMBINA (5 ORANG) -->
+            <!-- ========================================= -->
+            <div class="organizational-level">
+                <div class="level-header">
+                    <div class="level-icon"><i class="fas fa-crown"></i></div>
+                    <h2 class="level-title">PEMBINA YAYASAN</h2>
+                </div>
+                <div class="level-content">
+                    <div class="name-grid grid-5">
+                        <div class="name-badge">Lukman Hakim, SH</div>
+                        <div class="name-badge">Purnama Indra Laksmana</div>
+                        <div class="name-badge">Ruli Rinaldi</div>
+                        <div class="name-badge">Giri Kus Anggoro</div>
+                        <div class="name-badge">Rudi Yuliswanto</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR -->
+            <div class="connector-down"></div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 2: PENGAWAS (4 ORANG) -->
+            <!-- ========================================= -->
+            <div class="organizational-level">
+                <div class="level-header">
+                    <div class="level-icon"><i class="fas fa-eye"></i></div>
+                    <h2 class="level-title">PENGAWAS YAYASAN</h2>
+                </div>
+                <div class="level-content">
+                    <div class="name-grid grid-4">
+                        <div class="name-badge">Nasrullah</div>
+                        <div class="name-badge">Irawan Sudjana</div>
+                        <div class="name-badge">Taufiq Shahab</div>
+                        <div class="name-badge">Yayat Ahmad Hidayat</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR -->
+            <div class="connector-down"></div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 3: KETUA UMUM, SEKRETARIS, BENDAHARA (3 KOLOM) -->
+            <!-- ========================================= -->
+            <div class="row-3-cols">
+                <!-- KETUA UMUM -->
+                <div class="org-card">
+                    <div class="card-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>KETUA UMUM</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="main-name">Fathur Rahman</div>
+                    </div>
+                </div>
+
+                <!-- SEKRETARIS -->
+                <div class="org-card">
+                    <div class="card-header">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>SEKRETARIS</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="sub-name">
+                            <span class="sub-title">Sekretaris Umum</span>
+                            <span class="sub-person">Muhammad Muafiq</span>
+                        </div>
+                        <div class="sub-name">
+                            <span class="sub-title">Sekretaris 1</span>
+                            <span class="sub-person">Eko Rukmono Satwa</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BENDAHARA -->
+                <div class="org-card">
+                    <div class="card-header">
+                        <i class="fas fa-coins"></i>
+                        <h3>BENDAHARA</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="sub-name">
+                            <span class="sub-title">Bendahara Umum</span>
+                            <span class="sub-person">Nana Sukmana</span>
+                        </div>
+                        <div class="sub-name">
+                            <span class="sub-title">Bendahara 1</span>
+                            <span class="sub-person">Yudhistira Nugraha</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR -->
+            <div class="connector-down"></div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 4: DIREKTUR AHIS -->
+            <!-- ========================================= -->
+            <div class="director-section">
+                <div class="director-card">
+                    <div class="director-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="director-info">
+                        <div class="director-label">DIREKTUR AHIS</div>
+                        <div class="director-name">Ust. Hasan Ishak, MA</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR -->
+            <div class="connector-down"></div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 5: AL HIDAYAH ISLAMIC SCHOOL (JUDUL SAJA) -->
+            <!-- ========================================= -->
+            <div class="school-section">
+                <div class="school-badge">
+                    <i class="fas fa-school"></i>
+                    <h3>AL HIDAYAH ISLAMIC SCHOOL</h3>
+                </div>
+                <div class="school-note">(Sekolah di bawah naungan Yayasan Al-Hidayah)</div>
+            </div>
+
+            <!-- CONNECTOR BERCABANG -->
+            <div class="branch-connector">
+                <div class="branch-line"></div>
+                <div class="branch-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 6: DKM & BIDANG EKONOMI (2 KOLOM) -->
+            <!-- ========================================= -->
+            <div class="row-2-cols">
+                <!-- DKM AL-HIDAYAH (Pertama) -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #0b4d3b;">
+                        <i class="fas fa-mosque"></i>
+                        <h4>DKM AL-HIDAYAH</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">Asep Saepudin</span>
+                        </div>
+                        <div class="leader-item">
+                            <span class="leader-label">Wakil</span>
+                            <span class="leader-name">Kurniawan</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Ulyas Yedi</span>
+                        <span class="member-item">Rahmat Basuki</span>
+                        <span class="member-item">Hascaryo</span>
+                        <span class="member-item">Ary Maryadi</span>
+                        <span class="member-item">Muzaffar Muchtar</span>
+                        <span class="member-item">Hendry Bayu Nugroho</span>
+                        <span class="member-item">Budi Santoso</span>
+                        <span class="member-item">Eko Jatniko</span>
+                        <span class="member-item">Imannurahman</span>
+                        <span class="member-item">Rudi Firmansyah</span>
+                        <span class="member-item">M Suzatob Aang</span>
+                        <span class="member-item">Donny Soesatya</span>
+                        <span class="member-item">Panji Bagus Pamungkas</span>
+                        <span class="member-item">Paradityo Sasmoyo</span>
+                        <span class="member-item">Sukirjo</span>
+                    </div>
+                </div>
+
+                <!-- BIDANG EKONOMI -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #d4af37;">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>BID. EKONOMI DAN KESEJAHTERAAN UMAT</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">Iyos Edi</span>
+                        </div>
+                        <div class="leader-item">
+                            <span class="leader-label">Wakil</span>
+                            <span class="leader-name">Cipto Handoyo</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Asep Rohman</span>
+                        <span class="member-item">Idham Sugiarto</span>
+                        <span class="member-item">Suranto</span>
+                        <span class="member-item">Benny K. Haruni</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR BERCABANG -->
+            <div class="branch-connector">
+                <div class="branch-line"></div>
+                <div class="branch-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 7: BIDANG SOSIAL & DKM KEDUA (2 KOLOM) -->
+            <!-- ========================================= -->
+            <div class="row-2-cols">
+                <!-- BIDANG SOSIAL -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #fd7e14;">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h4>BID. SOSIAL DAN KEMASYARAKATAN</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">M Chawari</span>
+                        </div>
+                        <div class="leader-item">
+                            <span class="leader-label">Wakil</span>
+                            <span class="leader-name">Gunadi</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Anwari Albi</span>
+                        <span class="member-item">Zulfikar</span>
+                        <span class="member-item">Joko Tandyono</span>
+                        <span class="member-item">Budi Hartono</span>
+                        <span class="member-item">Wahyu Hargono</span>
+                        <span class="member-item">Herman Azis</span>
+                        <span class="member-item">Denny Mahendra</span>
+                        <span class="member-item">Untung</span>
+                        <span class="member-item">Supriatno</span>
+                    </div>
+                </div>
+
+                <!-- DKM AL-HIDAYAH (Kedua) -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #1e6091;">
+                        <i class="fas fa-mosque"></i>
+                        <h4>DKM AL-HIDAYAH</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">Asep Saepudin</span>
+                        </div>
+                        <div class="leader-item">
+                            <span class="leader-label">Wakil</span>
+                            <span class="leader-name">Kurniawan</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Anwari Albi</span>
+                        <span class="member-item">Zulfikar</span>
+                        <span class="member-item">Joko Tandyono</span>
+                        <span class="member-item">Budi Hartono</span>
+                        <span class="member-item">Wahyu Hargono</span>
+                        <span class="member-item">Herman Azis</span>
+                        <span class="member-item">Denny Mahendra</span>
+                        <span class="member-item">Untung</span>
+                        <span class="member-item">Supriatno</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR BERCABANG -->
+            <div class="branch-connector">
+                <div class="branch-line"></div>
+                <div class="branch-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- BARIS 8: DAARUSH SHODAQOH & INFRA STRUKTUR (2 KOLOM) -->
+            <!-- ========================================= -->
+            <div class="row-2-cols">
+                <!-- DAARUSH SHODAQOH -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #b45309;">
+                        <i class="fas fa-donate"></i>
+                        <h4>BID. DAARUSH SHODAQOH</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">Bambang Tejo L</span>
+                        </div>
+                        <div class="leader-item">
+                            <span class="leader-label">Wakil</span>
+                            <span class="leader-name">Yunan</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Trian BS</span>
+                        <span class="member-item">H. Kholis</span>
+                    </div>
+                </div>
+
+                <!-- INFRA STRUKTUR + ANGGOTA TAMBAHAN -->
+                <div class="field-card">
+                    <div class="field-header" style="border-left-color: #6f42c1;">
+                        <i class="fas fa-hard-hat"></i>
+                        <h4>BID. INFRA STRUKTUR</h4>
+                    </div>
+                    <div class="field-leaders">
+                        <div class="leader-item">
+                            <span class="leader-label">Ketua</span>
+                            <span class="leader-name">Gungun Trisna Ginanjar</span>
+                        </div>
+                    </div>
+                    <div class="members-title">ANGGOTA</div>
+                    <div class="members-grid">
+                        <span class="member-item">Heri Sutari</span>
+                        <span class="member-item">Sukamto</span>
+                        <span class="member-item">Ariopandji Mintardjo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- FOOTER TANDA TANGAN -->
+            <!-- ========================================= -->
+            <div class="document-footer">
+                <div class="footer-line"></div>
+                <div class="footer-signature">
+                    <p>Cikarang, 15 Februari 2025</p>
+                    <p class="signature-org">Yayasan Al-Hidayah Lembah Hijau</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER WEBSITE -->
+             <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Yayasan <span class="highlight">Al-Hidayah</span></h3>
+                            <p>Mendidik dengan Hati sejak 1998</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Komitmen kami adalah memberikan pendidikan terbaik yang mengintegrasikan ilmu pengetahuan modern dengan nilai-nilai Islam, membentuk generasi unggul yang siap menghadapi tantangan masa depan.
+                    </p>
+                    <div class="footer-certifications">
+                        <div class="cert-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Terakreditasi A</span>
+                        </div>
+                        <div class="cert-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sekolah Islam Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a>
+                    <a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Sekolah</a>
+                    <a href="programs.html"><i class="fas fa-chevron-right"></i> Program</a>
+                    <a href="teacher.html"><i class="fas fa-chevron-right"></i> Guru & Staff</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Prestasi</a>
+                    <a href="gallery.html"><i class="fas fa-chevron-right"></i> Galeri</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Program Pendidikan</h4>
+                    <a href="#"><i class="fas fa-chevron-right"></i> PAUD Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SD Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMP Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> SMA Islam Al-Hidayah</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Program Tahfizh</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Beasiswa</a>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan informasi terbaru tentang kegiatan sekolah, pendaftaran, dan tips parenting Islami.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Yayasan Al-Hidayah. Semua hak dilindungi.</p>
+                    <p class="footer-credits">Website by <span class="highlight">Tim IT Al-Hidayah</span></p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                    <a href="terms.html">Syarat & Ketentuan</a>
+                    <a href="sitemap.html">Peta Situs</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

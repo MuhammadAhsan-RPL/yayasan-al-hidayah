@@ -1,0 +1,626 @@
+/* ===== CSS STRUKTUR ORGANISASI - VERSION SUPER FIX ===== */
+/* Yayasan Al-Hidayah Lembah Hijau */
+/* File: css/struktur.css */
+
+/* RESET TOTAL */
+.struktur-container,
+.organizational-level,
+.level-header,
+.level-icon,
+.level-title,
+.name-grid,
+.name-badge,
+.row-3-cols,
+.row-2-cols,
+.org-card,
+.card-header,
+.main-name,
+.sub-name,
+.sub-title,
+.sub-person,
+.director-section,
+.director-card,
+.director-icon,
+.director-info,
+.director-label,
+.director-name,
+.school-section,
+.school-badge,
+.field-card,
+.field-header,
+.field-leaders,
+.leader-item,
+.leader-label,
+.leader-name,
+.members-title,
+.members-grid,
+.member-item,
+.connector-down,
+.branch-connector,
+.branch-line,
+.branch-dots,
+.document-footer,
+.footer-line,
+.footer-signature {
+    all: revert;
+    box-sizing: border-box !important;
+}
+
+/* ===== FIX TOTAL UNTUK STRUKTUR ORGANISASI ===== */
+/* Tambahkan di bagian ATAS file struktur.css */
+
+/* Fix untuk header fixed */
+.wrapper {
+    padding-top: 100px !important;
+    /* Memberi ruang untuk header fixed */
+    min-height: 100vh !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Pastikan page title muncul */
+.page-title {
+    background: #0b4d3b !important;
+    padding: 60px 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 90 !important;
+    clear: both !important;
+}
+
+.page-title h2 {
+    color: white !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.page-title p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+}
+
+/* Fix untuk container struktur */
+.struktur-container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 40px 20px 100px !important;
+    position: relative !important;
+    z-index: 95 !important;
+    background: white !important;
+    min-height: 800px !important;
+}
+
+/* Pastikan semua elemen turun */
+.organizational-level,
+.row-3-cols,
+.row-2-cols,
+.director-section,
+.school-section,
+.field-card {
+    margin-bottom: 30px !important;
+    position: relative !important;
+    z-index: 96 !important;
+}
+
+.struktur-container {
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 40px 20px 100px !important;
+    font-family: 'Inter', sans-serif !important;
+    background: #ffffff !important;
+    position: relative !important;
+    z-index: 999 !important;
+    clear: both !important;
+    display: block !important;
+    min-height: 1000px !important;
+}
+
+/* PAGE TITLE FIX - PASTI MUNCUL */
+.page-title {
+    background: #0b4d3b !important;
+    padding: 60px 0 !important;
+    text-align: center !important;
+    margin: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    position: relative !important;
+    z-index: 998 !important;
+}
+
+.page-title .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+.page-title h2 {
+    color: #ffffff !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    margin: 0 0 10px 0 !important;
+    text-transform: uppercase !important;
+    line-height: 1.2 !important;
+}
+
+.page-title p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+}
+
+/* LEVEL ORGANISASI */
+.organizational-level {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    padding: 30px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e9ecef !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.level-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    margin-bottom: 25px !important;
+    border-bottom: 2px solid #0b4d3b !important;
+    padding-bottom: 15px !important;
+}
+
+.level-icon {
+    width: 50px !important;
+    height: 50px !important;
+    background: #0b4d3b !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.level-icon i {
+    font-size: 24px !important;
+    color: #ffd700 !important;
+}
+
+.level-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #0b4d3b !important;
+    margin: 0 !important;
+}
+
+/* GRID NAMA */
+.name-grid {
+    display: grid !important;
+    gap: 15px !important;
+}
+
+.grid-5 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+}
+
+.name-badge {
+    background: #f8fafc !important;
+    padding: 15px 20px !important;
+    border-radius: 12px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #1e293b !important;
+    text-align: center !important;
+    border: 1px solid #e2e8f0 !important;
+    display: block !important;
+}
+
+/* ROW 3 KOLOM */
+.row-3-cols {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 25px !important;
+    margin: 30px 0 !important;
+    width: 100% !important;
+}
+
+.row-2-cols {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 25px !important;
+    margin: 30px 0 !important;
+    width: 100% !important;
+}
+
+/* CARD ORGANISASI */
+.org-card {
+    background: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 25px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+    border-top: 5px solid #0b4d3b !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.org-card .card-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #e9ecef !important;
+    padding-bottom: 15px !important;
+}
+
+.org-card .card-header i {
+    font-size: 28px !important;
+    color: #0b4d3b !important;
+    background: #f0f7f4 !important;
+    padding: 12px !important;
+    border-radius: 12px !important;
+}
+
+.org-card .card-header h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin: 0 !important;
+}
+
+.main-name {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    color: #0b4d3b !important;
+    text-align: center !important;
+    padding: 15px !important;
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    display: block !important;
+}
+
+.sub-name {
+    margin-bottom: 15px !important;
+    padding: 12px !important;
+    background: #f8fafc !important;
+    border-radius: 10px !important;
+    display: block !important;
+}
+
+.sub-title {
+    display: block !important;
+    font-size: 13px !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+    margin-bottom: 5px !important;
+}
+
+.sub-person {
+    display: block !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #0b4d3b !important;
+}
+
+/* DIREKTUR SECTION */
+.director-section {
+    display: flex !important;
+    justify-content: center !important;
+    margin: 30px 0 !important;
+    width: 100% !important;
+}
+
+.director-card {
+    background: linear-gradient(145deg, #f8f3e7, #fff9e6) !important;
+    border-radius: 100px !important;
+    padding: 25px 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 25px !important;
+    border: 2px solid #d4af37 !important;
+}
+
+.director-icon i {
+    font-size: 48px !important;
+    color: #0b4d3b !important;
+}
+
+.director-info {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.director-label {
+    font-size: 16px !important;
+    color: #92400e !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+}
+
+.director-name {
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    color: #0b4d3b !important;
+}
+
+/* SEKOLAH SECTION */
+.school-section {
+    text-align: center !important;
+    margin: 30px 0 !important;
+    padding: 20px !important;
+    background: #fff9e6 !important;
+    border-radius: 16px !important;
+    border: 1px solid #ffe5a3 !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.school-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 15px !important;
+    margin-bottom: 10px !important;
+}
+
+.school-badge i {
+    font-size: 36px !important;
+    color: #0b4d3b !important;
+}
+
+.school-badge h3 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #7b4a1e !important;
+    margin: 0 !important;
+}
+
+.school-note {
+    font-size: 16px !important;
+    color: #92400e !important;
+    font-style: italic !important;
+}
+
+/* FIELD CARD */
+.field-card {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 25px !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid #e9ecef !important;
+    width: 100% !important;
+    display: block !important;
+}
+
+.field-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-bottom: 20px !important;
+    border-left: 8px solid !important;
+    padding-left: 15px !important;
+}
+
+.field-header i {
+    font-size: 28px !important;
+    color: #0b4d3b !important;
+}
+
+.field-header h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    margin: 0 !important;
+    line-height: 1.3 !important;
+}
+
+.field-leaders {
+    display: flex !important;
+    gap: 20px !important;
+    margin-bottom: 20px !important;
+    background: #f8fafc !important;
+    padding: 15px !important;
+    border-radius: 12px !important;
+    flex-wrap: wrap !important;
+}
+
+.leader-item {
+    display: flex !important;
+    flex-direction: column !important;
+    min-width: 120px !important;
+}
+
+.leader-label {
+    font-size: 12px !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.leader-name {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #0b4d3b !important;
+}
+
+.members-title {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 15px !important;
+}
+
+.members-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+    gap: 10px !important;
+}
+
+.member-item {
+    background: #f1f5f9 !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    color: #334155 !important;
+    border: 1px solid #e2e8f0 !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+/* CONNECTOR */
+.connector-down {
+    width: 2px !important;
+    height: 40px !important;
+    background: linear-gradient(to bottom, #0b4d3b, #d4af37) !important;
+    margin: 20px auto !important;
+    display: block !important;
+}
+
+.branch-connector {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 20px 0 !important;
+}
+
+.branch-line {
+    width: 2px !important;
+    height: 30px !important;
+    background: #0b4d3b !important;
+}
+
+.branch-dots {
+    display: flex !important;
+    gap: 8px !important;
+    margin: 5px 0 !important;
+}
+
+.branch-dots span {
+    width: 8px !important;
+    height: 8px !important;
+    background: #d4af37 !important;
+    border-radius: 50% !important;
+}
+
+/* FOOTER DOKUMEN */
+.document-footer {
+    margin-top: 80px !important;
+    text-align: center !important;
+    clear: both !important;
+    position: relative !important;
+    z-index: 1000 !important;
+}
+
+.footer-line {
+    width: 300px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #0b4d3b, #d4af37, #0b4d3b) !important;
+    margin: 0 auto 25px !important;
+}
+
+.footer-signature p {
+    font-size: 18px !important;
+    color: #475569 !important;
+    margin: 5px 0 !important;
+}
+
+.signature-org {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #0b4d3b !important;
+    margin-top: 10px !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+    .row-3-cols,
+    .row-2-cols {
+        grid-template-columns: 1fr !important;
+    }
+
+    .director-card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 25px !important;
+        border-radius: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title h2 {
+        font-size: 32px !important;
+    }
+
+    .level-header {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .level-title {
+        font-size: 24px !important;
+    }
+
+    .name-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .school-badge {
+        flex-direction: column !important;
+    }
+
+    .director-name {
+        font-size: 24px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title h2 {
+        font-size: 24px !important;
+    }
+
+    .page-title p {
+        font-size: 14px !important;
+    }
+
+    .struktur-container {
+        padding: 20px 15px 80px !important;
+    }
+
+    .main-name {
+        font-size: 20px !important;
+    }
+
+    .sub-person {
+        font-size: 16px !important;
+    }
+
+    .members-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+ /* ===== MEMASTIKAN FONT SAMA PERSIS ===== */
+body, .header, .nav-link, .logo-text h1, .logo-subtitle {
+    font-family: 'Poppins', 'Inter', sans-serif !important;
+}
+
+.logo-text h1 {
+    font-weight: 500 !important; /* Sama dengan halaman utama */
+}
+
+.nav-link {
+    font-weight: 400 !important; /* Sama dengan halaman utama */
+}
+
+.nav-link.active {
+    font-weight: 500 !important;
+}

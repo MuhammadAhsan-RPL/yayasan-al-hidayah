@@ -2,8 +2,8 @@
 
 /* Page Header */
 .page-header {
-    background: linear-gradient(rgba(26, 75, 140, 0.9), rgba(26, 75, 140, 0.95)), 
-                url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+    background: linear-gradient(rgba(26, 75, 140, 0.9), rgba(26, 75, 140, 0.95)),
+        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     padding: 120px 0 60px;
@@ -371,7 +371,7 @@
     font-size: 1.375rem;
 }
 
-.timeline-year > p {
+.timeline-year>p {
     color: #2ecc71;
     font-weight: 600;
     margin-bottom: 15px;
@@ -501,7 +501,7 @@
     font-size: 1.5rem;
 }
 
-.major-content > p {
+.major-content>p {
     color: #555;
     line-height: 1.8;
     margin-bottom: 25px;
@@ -825,21 +825,21 @@
         text-align: center;
         gap: 20px;
     }
-    
+
     .program-icon-large {
         width: 80px;
         height: 80px;
         font-size: 2rem;
     }
-    
+
     .program-title h2 {
         font-size: 2rem;
     }
-    
+
     .program-highlights {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .structure-timeline {
         grid-template-columns: 1fr;
     }
@@ -849,81 +849,81 @@
     .page-header {
         padding: 100px 0 50px;
     }
-    
+
     .page-title {
         font-size: 2rem;
     }
-    
+
     .programs-tabs {
         gap: 8px;
     }
-    
+
     .program-tab {
         padding: 10px 20px;
         font-size: 0.875rem;
     }
-    
+
     .program-tab i {
         font-size: 1rem;
     }
-    
+
     .program-content h3 {
         font-size: 1.5rem;
     }
-    
+
     .program-content h4 {
         font-size: 1.25rem;
     }
-    
+
     .program-highlights {
         grid-template-columns: 1fr;
     }
-    
+
     .highlight-item {
         padding: 15px;
     }
-    
+
     .curriculum-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .special-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .extracurricular-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .preparation-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tahfizh-levels {
         grid-template-columns: 1fr;
     }
-    
+
     .methodology-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .facilities-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cta-content h2 {
         font-size: 2rem;
     }
-    
+
     .cta-content p {
         font-size: 1.125rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cta-buttons .btn {
         width: 100%;
         max-width: 300px;
@@ -934,33 +934,33 @@
     .page-title {
         font-size: 1.75rem;
     }
-    
+
     .program-title h2 {
         font-size: 1.75rem;
     }
-    
+
     .program-subtitle {
         font-size: 1rem;
     }
-    
+
     .majors-tabs {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .major-tab {
         width: 100%;
         text-align: center;
     }
-    
+
     .major-subjects ul {
         grid-template-columns: 1fr;
     }
-    
+
     .schedule-table {
         font-size: 0.875rem;
     }
-    
+
     .schedule-table th,
     .schedule-table td {
         padding: 12px 8px;
