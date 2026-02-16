@@ -516,5 +516,54 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            menuToggle.innerHTML = navLinks.classList.contains('show')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backTop.classList.add('show');
+            } else {
+                backTop.classList.remove('show');
+            }
+        });
+
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Animated Counter
+        function animateCounter() {
+            const counters = document.querySelectorAll('.stat-number');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 100;
+                let current = 0;
+
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target + (counter.textContent.includes('%') ? '%' : '');
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.floor(current) + (counter.textContent.includes('%') ? '%' : '');
+                    }
+                }, 20);
+            });
+        }
+</script>
 </body>
 </html>
